@@ -1,0 +1,19 @@
+
+> mizuki@7.6.5 astro D:\bloger\Snow-kal.github.io
+> astro "check"
+
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[2m19:04:56[22m [34m[content][39m Syncing content
+[2m19:04:57[22m [34m[content][39m Synced content
+[2m19:04:57[22m [34m[types][39m Generated [2m1.15s[22m
+[2m19:04:57[22m [34m[check][39m Getting diagnostics for Astro files in D:\bloger\Snow-kal.github.io...
+[96msrc/components/PostCard.astro[0m:[93m30[0m:[93m2[0m - [93mwarning[0m[90m ts(6133): [0m'draft' is declared but its value is never read.
+
+[7m30[0m  draft,
+[7m  [0m [93m ~~~~~[0m
+
+Result (104 files): 
+- 0 errors
+- 0 warnings
+- 1 hint
+
