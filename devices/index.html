@@ -1,0 +1,1464 @@
+<!DOCTYPE html><html lang="en" class="bg-[var(--page-bg)] text-[14px] md:text-[16px]" data-overlayscrollbars-initialize data-astro-cid-sckkx6r4 style="--bannerOffset: 15vh;--banner-height-home: 65vh;--banner-height: 35vh;--configHue: 230;--page-width: 90rem;"> <head><!-- 第三方分析脚本 - 延迟加载优化 --><script>
+			// 使用 requestIdleCallback 延迟加载第三方脚本
+			function loadAnalytics() {
+				// Google Tag Manager
+				(function (w, d, s, l, i) {
+					w[l] = w[l] || [];
+					w[l].push({
+						"gtm.start": new Date().getTime(),
+						event: "gtm.js",
+					});
+					var f = d.getElementsByTagName(s)[0],
+						j = d.createElement(s),
+						dl = l != "dataLayer" ? "&l=" + l : "";
+					j.async = true;
+					j.src =
+						"https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+					f.parentNode.insertBefore(j, f);
+				})(window, document, "script", "dataLayer", "GTM-KRX3XGVH");
+
+				// Clarity
+				(function (c, l, a, r, i, t, y) {
+					c[a] =
+						c[a] ||
+						function () {
+							(c[a].q = c[a].q || []).push(arguments);
+						};
+					t = l.createElement(r);
+					t.async = 1;
+					t.src = "https://www.clarity.ms/tag/" + i;
+					y = l.getElementsByTagName(r)[0];
+					y.parentNode.insertBefore(t, y);
+				})(window, document, "clarity", "script", "tjr3vkhj8i");
+			}
+
+			// 在浏览器空闲时加载，或者在 3 秒后加载
+			if ("requestIdleCallback" in window) {
+				requestIdleCallback(loadAnalytics, { timeout: 3000 });
+			} else {
+				setTimeout(loadAnalytics, 3000);
+			}
+		</script><title>My Devices - 翎</title><meta charset="UTF-8"><meta name="description" content="My Devices - 翎"><meta name="author" content="翎"><meta property="og:site_name" content="翎"><meta property="og:url" content="https://snow-kal.github.io/devices/"><meta property="og:title" content="My Devices - 翎"><meta property="og:description" content="My Devices - 翎"><meta property="og:type" content="website"><meta name="twitter:card" content="summary_large_image"><meta property="twitter:url" content="https://snow-kal.github.io/devices/"><meta name="twitter:title" content="My Devices - 翎"><meta name="twitter:description" content="My Devices - 翎"><meta name="viewport" content="width=device-width"><meta name="generator" content="Astro v5.16.4"><link rel="icon" href="/favicon/favicon.ico" sizes="64x64" media="(prefers-color-scheme: light)"><link rel="icon" href="/favicon/favicon.ico" sizes="64x64" media="(prefers-color-scheme: dark)"><!-- Set the theme before the page is rendered to avoid a flash --><script>(function(){const DEFAULT_THEME = "light";
+const LIGHT_MODE = "light";
+const DARK_MODE = "dark";
+const BANNER_HEIGHT_EXTEND = 30;
+const PAGE_WIDTH = 90;
+const configHue = 230;
+
+			// Load the theme from local storage
+			const theme = localStorage.getItem("theme") || DEFAULT_THEME;
+			let isDark = false;
+			switch (theme) {
+				case LIGHT_MODE:
+					document.documentElement.classList.remove("dark");
+					isDark = false;
+					break;
+				case DARK_MODE:
+					document.documentElement.classList.add("dark");
+					isDark = true;
+					break;
+			}
+
+			// Set the theme for Expressive Code based on current mode
+			const expressiveTheme = isDark ? "github-dark" : "github-light";
+			const currentTheme =
+				document.documentElement.getAttribute("data-theme");
+			// 只在主题不同时才更新，避免触发不必要的重绘
+			if (currentTheme !== expressiveTheme) {
+				document.documentElement.setAttribute(
+					"data-theme",
+					expressiveTheme,
+				);
+			}
+
+			// Load the hue from local storage
+			const hue = localStorage.getItem("hue") || configHue;
+			document.documentElement.style.setProperty("--hue", hue);
+
+			// calculate the --banner-height-extend, which needs to be a multiple of 4 to avoid blurry text
+			let offset = Math.floor(
+				window.innerHeight * (BANNER_HEIGHT_EXTEND / 100),
+			);
+			offset = offset - (offset % 4);
+			document.documentElement.style.setProperty(
+				"--banner-height-extend",
+				`${offset}px`,
+			);
+		})();</script><!-- defines global css variables. This will be applied to <html> <body> and some other elements idk why --><!-- Pio 看板娘样式 - 仅在启用时加载 --><link rel="alternate" type="application/rss+xml" title="翎" href="https://snow-kal.github.io/rss.xml"><!-- Umami Analytics --><link rel="stylesheet" href="/_astro/Layout.omPQcCVA.css">
+<link rel="stylesheet" href="/_astro/katex.B82Si5CG.css">
+<style>.filter-container[data-astro-cid-komnyuwm]{display:flex;flex-wrap:wrap;gap:.75rem;margin-bottom:1rem}.filter-tag[data-astro-cid-komnyuwm]{padding:.625rem 1.25rem;border:1px solid var(--line-divider);border-radius:var(--radius-large);background:var(--btn-regular-bg);color:var(--btn-content);font-size:.875rem;font-weight:500;cursor:pointer;transition:all .3s cubic-bezier(.4,0,.2,1);white-space:nowrap;position:relative;overflow:hidden}.filter-tag[data-astro-cid-komnyuwm]:before{content:"";position:absolute;top:0;left:0;width:100%;height:100%;background:var(--primary);opacity:0;transition:opacity .3s ease;z-index:-1}.filter-tag[data-astro-cid-komnyuwm]:hover:not(.active){background:var(--btn-hover-bg);border-color:var(--primary);transform:translateY(-2px);box-shadow:0 4px 8px #0000001a}.filter-tag[data-astro-cid-komnyuwm].active{background:var(--primary);color:#fff;border-color:var(--primary);transform:translateY(-1px);box-shadow:0 4px 12px rgba(var(--color-primary-rgb),.3)}.filter-tag[data-astro-cid-komnyuwm].active:hover{transform:translateY(-2px);box-shadow:0 6px 16px rgba(var(--color-primary-rgb),.4)}@keyframes fadeInUp{0%{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}.onload-animation[data-astro-cid-komnyuwm]{animation:fadeInUp .6s cubic-bezier(.25,.1,.25,1) forwards;opacity:0}.line-clamp-2[data-astro-cid-komnyuwm]{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}.device-card[data-astro-cid-komnyuwm]:after{content:"";position:absolute;inset:0;border-radius:.75rem;background:linear-gradient(135deg,rgba(var(--color-primary-rgb),.05),transparent);opacity:0;transition:opacity .4s ease;pointer-events:none}.device-card[data-astro-cid-komnyuwm]:hover:after{opacity:1}.device-card[data-astro-cid-komnyuwm] h3[data-astro-cid-komnyuwm]{text-shadow:0 1px 2px rgba(0,0,0,.05)}@media(max-width:640px){.filter-container[data-astro-cid-komnyuwm]{gap:.5rem}.filter-tag[data-astro-cid-komnyuwm]{padding:.5rem 1rem;font-size:.8rem}.device-card[data-astro-cid-komnyuwm] .relative[data-astro-cid-komnyuwm].p-6.pb-0{padding:1rem 1rem 0}.device-card[data-astro-cid-komnyuwm] .p-6[data-astro-cid-komnyuwm].pt-4{padding:1rem}}@media(prefers-color-scheme:dark){.device-card[data-astro-cid-komnyuwm]:hover{box-shadow:0 4px 12px #00000026}}
+</style>
+<link rel="stylesheet" href="/_astro/fancybox.DRe9SoLl.css">
+<link rel="stylesheet" href="/_astro/_page_.CerBZ0cZ.css">
+<link rel="stylesheet" href="/_astro/_page_.D27sn7x-.css">
+<link rel="stylesheet" href="/_astro/_page_.C4lxuTmn.css">
+<link rel="stylesheet" href="/_astro/_permalink_.DD66MbI9.css">
+<style>.line-clamp-2[data-astro-cid-b6yaaygw]{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}.album-card[data-astro-cid-b6yaaygw]:hover{transform:translateY(-2px)}@keyframes fadeInUp{0%{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}.album-card[data-astro-cid-b6yaaygw]{animation:fadeInUp .3s ease-out}
+.grid-layout[data-astro-cid-rgidg7mq]{display:grid;gap:1rem}.grid-layout[data-astro-cid-rgidg7mq][data-columns="2"]{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}.grid-layout[data-astro-cid-rgidg7mq][data-columns="3"]{grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}.grid-layout[data-astro-cid-rgidg7mq][data-columns="4"]{grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}.masonry-layout[data-astro-cid-rgidg7mq]{-moz-columns:2;columns:2;-moz-column-gap:1rem;column-gap:1rem}@media(min-width:768px){.masonry-layout[data-astro-cid-rgidg7mq]{-moz-columns:3;columns:3}}@media(min-width:1024px){.masonry-layout[data-astro-cid-rgidg7mq][data-columns="4"]{-moz-columns:4;columns:4}}.masonry-layout[data-astro-cid-rgidg7mq] .photo-item[data-astro-cid-rgidg7mq]{-moz-column-break-inside:avoid;break-inside:avoid;margin-bottom:1rem}.grid-layout[data-astro-cid-rgidg7mq] .photo-container[data-astro-cid-rgidg7mq]{aspect-ratio:1}
+.anime-card-base{container-type:inline-size}.anime-grid-container{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem;transition:gap .5s cubic-bezier(.4,0,.2,1)}.anime-grid-container.anime-grid-mode{grid-template-columns:repeat(2,1fr)}@container (min-width: 480px){.anime-grid-container.anime-grid-mode{grid-template-columns:repeat(3,1fr)}}@container (min-width: 768px){.anime-grid-container.anime-grid-mode{grid-template-columns:repeat(4,1fr)}}@container (min-width: 1024px){.anime-grid-container.anime-grid-mode{grid-template-columns:repeat(5,1fr)}}.anime-grid-container.anime-list-mode{grid-template-columns:repeat(1,1fr)}@media(min-width:1024px){.anime-grid-container.anime-list-mode{grid-template-columns:repeat(2,1fr)}}.anime-grid-container.anime-list-mode .group{display:flex;flex-direction:row;min-height:12rem}.anime-grid-container.anime-list-mode .anime-cover-container{width:8.5rem;height:auto;aspect-ratio:2/3;flex-shrink:0}@media(min-width:768px){.anime-grid-container.anime-list-mode .anime-cover-container{width:11rem}}.anime-grid-container.anime-list-mode .p-3{flex-grow:1;display:flex;flex-direction:column;justify-content:space-between;padding:.75rem 1rem}.anime-grid-container.anime-list-mode h3{-webkit-line-clamp:unset;line-clamp:unset;white-space:normal}.anime-grid-container.anime-list-mode .group p.text-xs{-webkit-line-clamp:4;line-clamp:4}.anime-filter-container{display:flex;flex-wrap:wrap;gap:.5rem}.anime-filter-tag{padding:.5rem 1rem;border:1px solid var(--line-divider);border-radius:var(--radius-large);background:var(--btn-regular-bg);color:var(--btn-content);font-size:.875rem;font-weight:500;cursor:pointer;transition:all .2s ease;white-space:nowrap}.anime-filter-tag:hover:not(.anime-active){background:var(--btn-hover-bg);border-color:var(--primary);transform:translateY(-1px)}.anime-filter-tag.anime-active{background:var(--primary);color:#fff;border-color:var(--primary)}.anime-grid-container [data-anime-status].anime-hidden{display:none!important}.anime-grid-container [data-anime-status]{transition:opacity .5s cubic-bezier(.4,0,.2,1),transform .5s cubic-bezier(.4,0,.2,1),box-shadow .15s ease-out;content-visibility:auto;contain-intrinsic-size:1px 350px}.anime-grid-container [data-anime-status].anime-fade-out{opacity:0;transform:scale(.9);pointer-events:none}.anime-grid-container [data-anime-status].anime-fade-in{opacity:0;transform:scale(.9)}.anime-grid-container [data-anime-status].anime-fade-in-active{opacity:1;transform:scale(1)}.anime-loading-spinner{border-right-color:var(--primary);animation:spin 1s linear infinite}@keyframes spin{0%{transform:rotate(0)}to{transform:rotate(360deg)}}
+.card-base[data-astro-cid-pyfuvgrx]{background:var(--card-bg);border:1px solid var(--line-divider);transition:all .3s ease}.moments-header[data-astro-cid-pyfuvgrx]{padding:1rem;border-radius:8px;background:linear-gradient(135deg,var(--primary) 0%,var(--primary-dark, var(--primary)) 100%);color:#fff;position:relative;overflow:hidden}.header-content[data-astro-cid-pyfuvgrx]{display:flex;justify-content:space-between;align-items:center;position:relative;z-index:1}.moments-title[data-astro-cid-pyfuvgrx]{color:#fff;text-shadow:0 1px 2px rgba(0,0,0,.1)}.moments-subtitle[data-astro-cid-pyfuvgrx]{color:#ffffffe6}.stat-number[data-astro-cid-pyfuvgrx]{color:#fff}.stat-label[data-astro-cid-pyfuvgrx]{color:#fffc}.image-item[data-astro-cid-pyfuvgrx] img[data-astro-cid-pyfuvgrx]{transition:transform .3s ease}.image-item[data-astro-cid-pyfuvgrx]:hover img[data-astro-cid-pyfuvgrx]{transform:scale(1.05)}.action-btn[data-astro-cid-pyfuvgrx]{background:none;border:none;cursor:pointer;color:var(--text-muted)}.action-btn[data-astro-cid-pyfuvgrx]:hover{color:var(--primary)}@media(max-width:640px){.moments-header[data-astro-cid-pyfuvgrx]{padding:.75rem}.header-content[data-astro-cid-pyfuvgrx]{flex-direction:column;text-align:center;gap:.75rem}.moment-images[data-astro-cid-pyfuvgrx]{grid-template-columns:repeat(2,1fr)}.moment-footer[data-astro-cid-pyfuvgrx]{flex-direction:column;align-items:flex-start;gap:.5rem}}@media(min-width:641px)and (max-width:900px){.moments-header[data-astro-cid-pyfuvgrx]{padding:1.25rem}.header-content[data-astro-cid-pyfuvgrx]{display:flex;justify-content:space-between;align-items:center}.moment-item[data-astro-cid-pyfuvgrx]{padding:1.5rem}.moment-images[data-astro-cid-pyfuvgrx]{grid-template-columns:repeat(3,1fr);gap:.75rem;max-width:500px}.moment-text[data-astro-cid-pyfuvgrx]{font-size:1rem;line-height:1.7}.moment-footer[data-astro-cid-pyfuvgrx]{margin-top:1rem}}@media(min-width:901px){.moments-header[data-astro-cid-pyfuvgrx]{padding:1.5rem}.moment-item[data-astro-cid-pyfuvgrx]{padding:2rem}.moment-images[data-astro-cid-pyfuvgrx]{grid-template-columns:repeat(auto-fit,minmax(150px,1fr));max-width:600px;gap:1rem}.moment-text[data-astro-cid-pyfuvgrx]{font-size:1.1rem;line-height:1.8}}@media(max-width:480px){.moment-item[data-astro-cid-pyfuvgrx]{border-radius:8px}.moments-header[data-astro-cid-pyfuvgrx]{border-radius:6px}}
+.friend-card[data-astro-cid-spp2p3no]{animation:fadeInUp .5s ease-out forwards;opacity:0}.friend-card[data-astro-cid-spp2p3no]:nth-child(1){animation-delay:.05s}.friend-card[data-astro-cid-spp2p3no]:nth-child(2){animation-delay:.1s}.friend-card[data-astro-cid-spp2p3no]:nth-child(3){animation-delay:.15s}.friend-card[data-astro-cid-spp2p3no]:nth-child(4){animation-delay:.2s}.friend-card[data-astro-cid-spp2p3no]:nth-child(5){animation-delay:.25s}.friend-card[data-astro-cid-spp2p3no]:nth-child(6){animation-delay:.3s}@keyframes fadeInUp{0%{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}#friend-search[data-astro-cid-spp2p3no]:focus{box-shadow:0 0 0 3px var(--primary) / .1}.filter-container[data-astro-cid-spp2p3no]{display:flex;flex-wrap:wrap;gap:.5rem}.filter-tag[data-astro-cid-spp2p3no]{padding:.5rem 1rem;border:1px solid var(--line-divider);border-radius:var(--radius-large);background:var(--btn-regular-bg);color:var(--btn-content);font-size:.875rem;font-weight:500;cursor:pointer;transition:all .2s ease;white-space:nowrap}.filter-tag[data-astro-cid-spp2p3no]:hover:not(.active){background:var(--btn-hover-bg);border-color:var(--primary);transform:translateY(-1px)}.filter-tag[data-astro-cid-spp2p3no].active{background:var(--primary);color:#fff;border-color:var(--primary)}.filter-tag[data-astro-cid-spp2p3no].active:hover{background:var(--primary)!important;color:#fff!important;border-color:var(--primary)!important;transform:translateY(-1px)}
+.line-clamp-1[data-astro-cid-aid3sr62]{display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden}.line-clamp-2[data-astro-cid-aid3sr62]{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.line-clamp-2[data-astro-cid-qlh7ngej]{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}@keyframes pulse{0%{transform:scale(1);box-shadow:0 0 #6366f166}70%{transform:scale(1.05);box-shadow:0 0 0 10px #6366f100}to{transform:scale(1);box-shadow:0 0 #6366f100}}.timeline-node[data-astro-cid-qlh7ngej]{animation:pulse 2s infinite}.timeline-horizontal-scroll[data-astro-cid-qlh7ngej]::-webkit-scrollbar{height:8px}.timeline-horizontal-scroll[data-astro-cid-qlh7ngej]::-webkit-scrollbar-track{background:#e5e7eb;border-radius:4px}.timeline-horizontal-scroll[data-astro-cid-qlh7ngej]::-webkit-scrollbar-thumb{background:hsl(var(--hue),70%,60%);border-radius:4px}
+.skills-container[data-astro-cid-xahix5fp]{position:relative}.skills-grid-container[data-astro-cid-xahix5fp]{grid-template-columns:1fr;transition:grid-template-columns .3s ease}@container (min-width: 640px){.skills-grid-container[data-astro-cid-xahix5fp]{grid-template-columns:repeat(2,1fr)}}@container (min-width: 900px){.skills-grid-container[data-astro-cid-xahix5fp]{grid-template-columns:repeat(3,1fr)}}
+</style>
+<link rel="stylesheet" href="/_astro/_page_.DodusQ_4.css"><script type="module" src="/_astro/page.DltOGiho.js"></script></head> <body class="min-h-screen enable-banner" style="font-family: ZenMaruGothic-Medium, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;; --bannerOffset: 15vh;--banner-height-home: 65vh;--banner-height: 35vh;--configHue: 230;--page-width: 90rem;" data-overlayscrollbars-initialize data-astro-cid-sckkx6r4> <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KRX3XGVH" height="0" width="0" style="display:none;visibility:hidden; --bannerOffset: 15vh;--banner-height-home: 65vh;--banner-height: 35vh;--configHue: 230;--page-width: 90rem;" data-astro-cid-sckkx6r4></iframe></noscript> <!-- 页面顶部渐变高光效果 - 只在full和semifull模式下显示 --> <div class="top-gradient-highlight" data-astro-cid-sckkx6r4 style="--bannerOffset: 15vh;--banner-height-home: 65vh;--banner-height: 35vh;--configHue: 230;--page-width: 90rem;"></div> <!-- 全局配置载体 --><div id="config-carrier" data-hue="230" data-hide-code-blocks-during-transition="true"></div> <script>(function(){const tocEnable = true;
+const tocDepth = 2;
+const tocUseJapaneseBadge = true;
+
+  // 将TOC配置传递到前端
+  window.siteConfig = window.siteConfig || {};
+  window.siteConfig.toc = {
+    enable: tocEnable,
+    depth: tocDepth,
+    useJapaneseBadge: tocUseJapaneseBadge
+  };
+  
+  // 添加调试信息
+  console.log('TOC Config:', window.siteConfig.toc);
+})();</script> <!-- 引入Umami Share工具脚本 --> <script src="/js/umami-share.js"></script>  <script>(function(){const navbarTransparentMode = "semifull";
+const defaultWallpaperMode = "banner";
+const defaultPostListLayout = "list";
+
+	// 立即执行，在页面渲染前应用壁纸模式和布局模式，避免闪烁
+	(function() {
+		const wallpaperMode = localStorage.getItem('wallpaperMode') || defaultWallpaperMode;
+		const body = document.body;
+		
+		// 定义 banner 高度常量（与 constants.ts 保持一致）
+		// const BANNER_HEIGHT = 35;
+		// const BANNER_HEIGHT_EXTEND = 30;
+		// const BANNER_HEIGHT_HOME = BANNER_HEIGHT + BANNER_HEIGHT_EXTEND;
+		// const MAIN_PANEL_OVERLAPS_BANNER_HEIGHT = 3.5;
+		
+		// 立即应用 body 类，确保首次渲染就是正确的状态
+		switch(wallpaperMode) {
+			case 'banner':
+				body.classList.add('enable-banner');
+				body.classList.remove('wallpaper-transparent', 'no-banner-mode');
+				break;
+			case 'fullscreen':
+				body.classList.remove('enable-banner');
+				body.classList.add('wallpaper-transparent', 'no-banner-mode');
+				break;
+			case 'none':
+				body.classList.remove('enable-banner', 'wallpaper-transparent');
+				body.classList.add('no-banner-mode');
+				break;
+		}
+		
+		// 立即调整主内容区域位置和布局模式（避免闪烁和位置错误）
+		// 使用 requestAnimationFrame 确保 DOM 准备好
+		requestAnimationFrame(function() {
+			const mainContent = document.querySelector('.absolute.w-full.z-30.pointer-events-none');
+			if (mainContent) {
+				if (wallpaperMode === 'banner') {
+					// 让主内容区域从banner顶部开始，这样波浪线会自然覆盖内容上部
+					mainContent.style.top = `${BANNER_HEIGHT}vh`;
+				} else {
+					// fullscreen 或 none 模式
+					mainContent.style.top = '5.5rem';
+				}
+			}
+			
+			// 立即应用布局模式，避免闪烁
+			const mainGrid = document.getElementById('main-grid');
+			if (mainGrid) {
+				const savedLayout = localStorage.getItem('postListLayout');
+				const currentLayout = savedLayout || defaultPostListLayout;
+				mainGrid.setAttribute('data-layout-mode', currentLayout);
+				
+				// 根据布局模式显示或隐藏右侧边栏
+				const rightSidebar = document.querySelector('.right-sidebar-container');
+				if (rightSidebar) {
+					if (currentLayout === 'grid') {
+						rightSidebar.classList.add('hidden-in-grid-mode');
+					} else {
+						rightSidebar.classList.remove('hidden-in-grid-mode');
+					}
+				}
+				
+				// 同时更新文章列表容器的CSS类
+				const postListContainer = document.getElementById('post-list-container');
+				if (postListContainer) {
+					postListContainer.classList.remove('list-mode', 'grid-mode');
+					
+					if (currentLayout === 'grid') {
+						postListContainer.classList.add('grid-mode');
+						postListContainer.classList.add('grid', 'grid-cols-1', 'lg:grid-cols-2', 'gap-6');
+						postListContainer.classList.remove('flex', 'flex-col');
+					} else {
+						postListContainer.classList.add('list-mode');
+						postListContainer.classList.add('flex', 'flex-col');
+						postListContainer.classList.remove('grid', 'grid-cols-1', 'lg:grid-cols-2', 'gap-6');
+					}
+				}
+			}
+		});
+	})();
+	
+	// 根据壁纸模式动态设置 banner 和全屏壁纸的显示
+	// const wallpaperMode = localStorage.getItem('wallpaperMode') || defaultWallpaperMode;
+	
+	// 在 DOM 加载后执行
+	if (document.readyState === 'loading') {
+		document.addEventListener('DOMContentLoaded', applyWallpaperMode);
+	} else {
+		applyWallpaperMode();
+	}
+	
+	function applyWallpaperMode() {
+		var wallpaperMode = localStorage.getItem('wallpaperMode') || defaultWallpaperMode;
+		var bannerWrapper = document.getElementById('banner-wrapper');
+		var fullscreenWallpaper = document.querySelector('[data-fullscreen-wallpaper]');
+		var navbar = document.getElementById('navbar');
+		var body = document.body;
+		var mainContent = document.querySelector('.absolute.w-full.z-30.pointer-events-none');
+		
+		// 强制重排以确保样式正确应用
+		var forceReflow = function() {
+			void document.body.offsetHeight;
+		};
+		
+		switch(wallpaperMode) {
+			case 'banner':
+				// 显示 banner，隐藏全屏壁纸
+				if (bannerWrapper) {
+					bannerWrapper.style.display = 'block';
+				}
+				if (fullscreenWallpaper) {
+					fullscreenWallpaper.style.display = 'none';
+				}
+				// 先移除body类，避免CSS冲突
+				body.classList.remove('wallpaper-transparent');
+				body.classList.remove('no-banner-mode');
+				// 强制重排
+				forceReflow();
+				// 移除内联样式，让CSS完全接管
+				if (mainContent) {
+					mainContent.style.removeProperty('top');
+				}
+				// 再添加enable-banner类
+				body.classList.add('enable-banner');
+				// navbar 恢复原始透明模式（从 config 读取）
+				if (navbar) {
+					navbar.removeAttribute('data-dynamic-transparent');
+					// 恢复 config 中设置的 data-transparent-mode
+					navbar.setAttribute('data-transparent-mode', navbarTransparentMode);
+					// 如果是 semifull 模式，重新初始化滚动检测
+					if (navbarTransparentMode === 'semifull' && window.initSemifullScrollDetection) {
+						window.initSemifullScrollDetection();
+					}
+				}
+				// 强制重排以确保CSS变量正确更新
+				forceReflow();
+				break;
+				
+			case 'fullscreen':
+				// 隐藏 banner，显示全屏壁纸
+				if (bannerWrapper) {
+					bannerWrapper.style.display = 'none';
+				}
+				if (fullscreenWallpaper) {
+					fullscreenWallpaper.style.display = 'block';
+				}
+				// 先移除body类，避免CSS冲突
+				body.classList.remove('enable-banner');
+				// 强制重排
+				forceReflow();
+				// 移除内联样式，让CSS完全接管
+				if (mainContent) {
+					mainContent.style.removeProperty('top');
+				}
+				// 再添加wallpaper-transparent和no-banner-mode类
+				body.classList.add('wallpaper-transparent');
+				body.classList.add('no-banner-mode');
+				// navbar 强制设置为 semi 透明模式（忽略 config 配置）
+				if (navbar) {
+					navbar.setAttribute('data-dynamic-transparent', 'semi');
+					// 强制移除 config 中的 data-transparent-mode 影响
+					navbar.removeAttribute('data-transparent-mode');
+				}
+				// 强制重排以确保CSS变量正确更新
+				forceReflow();
+				break;
+				
+			case 'none':
+				// 隐藏所有壁纸
+				if (bannerWrapper) {
+					bannerWrapper.style.display = 'none';
+				}
+				if (fullscreenWallpaper) {
+					fullscreenWallpaper.style.display = 'none';
+				}
+				// 先移除body类，避免CSS冲突
+				body.classList.remove('enable-banner');
+				body.classList.remove('wallpaper-transparent');
+				// 强制重排
+				forceReflow();
+				// 移除内联样式，让CSS完全接管
+				if (mainContent) {
+					mainContent.style.removeProperty('top');
+				}
+				// 再添加no-banner-mode类
+				body.classList.add('no-banner-mode');
+				// navbar 强制设置为不透明（忽略 config 配置）
+				if (navbar) {
+					navbar.setAttribute('data-dynamic-transparent', 'none');
+					// 强制移除 config 中的 data-transparent-mode 影响
+					navbar.removeAttribute('data-transparent-mode');
+				}
+				// 强制重排以确保CSS变量正确更新
+				forceReflow();
+				break;
+		}
+	}
+	
+	// 监听壁纸模式变化，立即应用（不重载页面）
+	window.addEventListener('wallpaper-mode-change', function(_event) {
+		applyWallpaperMode();
+	});
+	
+	// 支持 Swup 页面过渡 - 在内容替换之前就应用布局，避免闪烁
+	function setupSwupLayoutSync() {
+		// @ts-ignore
+		if (typeof window !== 'undefined' && window.swup) {
+			// 关键：在 content:replace 之前（animation:out:start）就准备好布局状态
+			// @ts-ignore
+			window.swup.hooks.on('animation:out:start', function() {
+				// 保存当前布局状态，以便在新页面中立即应用
+				const savedLayout = localStorage.getItem('postListLayout');
+				if (savedLayout) {
+					// @ts-ignore
+					window.__pendingLayoutMode = savedLayout;
+				}
+			});
+			
+			// 在内容替换后立即应用布局，不等待其他脚本
+			// @ts-ignore
+			window.swup.hooks.on('content:replace', function() {
+				const mainGrid = document.getElementById('main-grid');
+				if (mainGrid) {
+					// @ts-ignore
+					const currentLayout = window.__pendingLayoutMode || localStorage.getItem('postListLayout') || defaultPostListLayout;
+					mainGrid.setAttribute('data-layout-mode', currentLayout);
+					
+					const rightSidebar = document.querySelector('.right-sidebar-container');
+					if (rightSidebar) {
+						if (currentLayout === 'grid') {
+							rightSidebar.classList.add('hidden-in-grid-mode');
+						} else {
+							rightSidebar.classList.remove('hidden-in-grid-mode');
+						}
+					}
+					
+					// 关键：同时更新文章列表容器的CSS类
+					const postListContainer = document.getElementById('post-list-container');
+					if (postListContainer) {
+						// 移除现有布局类
+						postListContainer.classList.remove('list-mode', 'grid-mode');
+						
+						if (currentLayout === 'grid') {
+							postListContainer.classList.add('grid-mode');
+							postListContainer.classList.add('grid', 'grid-cols-1', 'lg:grid-cols-2', 'gap-6');
+							postListContainer.classList.remove('flex', 'flex-col');
+						} else {
+							postListContainer.classList.add('list-mode');
+							postListContainer.classList.add('flex', 'flex-col');
+							postListContainer.classList.remove('grid', 'grid-cols-1', 'lg:grid-cols-2', 'gap-6');
+						}
+					}
+					
+					// 清除临时状态
+					// @ts-ignore
+					delete window.__pendingLayoutMode;
+				}
+			});
+			
+			return true;
+		}
+		return false;
+	}
+	
+	// 尝试立即设置，如果失败则延迟重试
+	if (!setupSwupLayoutSync()) {
+		const checkSwup = setInterval(function() {
+			if (setupSwupLayoutSync()) {
+				clearInterval(checkSwup);
+			}
+		}, 50);
+		
+		setTimeout(function() {
+			clearInterval(checkSwup);
+		}, 2000);
+	}
+	
+	// 支持 Swup 页面过渡
+	document.addEventListener('swup:page:view', function() {
+		applyWallpaperMode();
+		
+		// 在Swup页面切换时也要重新应用布局模式
+		requestAnimationFrame(function() {
+			const mainGrid = document.getElementById('main-grid');
+			if (mainGrid) {
+				const savedLayout = localStorage.getItem('postListLayout');
+				const currentLayout = savedLayout || defaultPostListLayout;
+				mainGrid.setAttribute('data-layout-mode', currentLayout);
+				
+				if (currentLayout === 'grid') {
+					const rightSidebar = document.querySelector('.right-sidebar-container');
+					if (rightSidebar) {
+						rightSidebar.classList.add('hidden-in-grid-mode');
+					}
+				} else {
+					const rightSidebar = document.querySelector('.right-sidebar-container');
+					if (rightSidebar) {
+						rightSidebar.classList.remove('hidden-in-grid-mode');
+					}
+				}
+			}
+		});
+	});
+	// 在页面完全加载后，再次确认布局模式是否正确
+	if (document.readyState === 'loading') {
+		document.addEventListener('DOMContentLoaded', function() {
+			const mainGrid = document.getElementById('main-grid');
+			if (mainGrid) {
+				const savedLayout = localStorage.getItem('postListLayout');
+				const currentLayout = savedLayout || defaultPostListLayout;
+				mainGrid.setAttribute('data-layout-mode', currentLayout);
+				
+				if (currentLayout === 'grid') {
+					const rightSidebar = document.querySelector('.right-sidebar-container');
+					if (rightSidebar) {
+						rightSidebar.classList.add('hidden-in-grid-mode');
+					}
+				}
+			}
+		});
+	}
+})();</script>  <div class="fixed inset-0 w-full h-full overflow-hidden pointer-events-none" style="z-index: -1; opacity: 0.8; transform: translateZ(0); perspective: 1000px;" data-fullscreen-wallpaper> <script>
+	// 立即执行脚本：防止闪烁
+	(function() {
+		const mode = localStorage.getItem('wallpaperMode') || 'banner';
+		if (mode !== 'fullscreen') {
+			document.currentScript.parentElement.style.display = 'none';
+		}
+	})();
+	</script> <div class="hidden lg:block w-full h-full relative" style="transform: translateZ(0);"> <img src="/assets/desktop-banner/1.webp" alt="desktop wallpaper 1" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 object-center" data-carousel-item="0" style="transform: translateZ(0); backface-visibility: hidden; will-change: opacity; filter: blur(1px);; opacity: 1;" decoding="async" loading="eager"><img src="/assets/desktop-banner/2.webp" alt="desktop wallpaper 2" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 object-center" data-carousel-item="1" style="transform: translateZ(0); backface-visibility: hidden; will-change: opacity; filter: blur(1px);; opacity: 0;" decoding="async" loading="lazy"><img src="/assets/desktop-banner/3.webp" alt="desktop wallpaper 3" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 object-center" data-carousel-item="2" style="transform: translateZ(0); backface-visibility: hidden; will-change: opacity; filter: blur(1px);; opacity: 0;" decoding="async" loading="lazy"><img src="/assets/desktop-banner/4.webp" alt="desktop wallpaper 4" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 object-center" data-carousel-item="3" style="transform: translateZ(0); backface-visibility: hidden; will-change: opacity; filter: blur(1px);; opacity: 0;" decoding="async" loading="lazy"><img src="/assets/desktop-banner/5.webp" alt="desktop wallpaper 5" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 object-center" data-carousel-item="4" style="transform: translateZ(0); backface-visibility: hidden; will-change: opacity; filter: blur(1px);; opacity: 0;" decoding="async" loading="lazy"><img src="/assets/desktop-banner/6.webp" alt="desktop wallpaper 6" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 object-center" data-carousel-item="5" style="transform: translateZ(0); backface-visibility: hidden; will-change: opacity; filter: blur(1px);; opacity: 0;" decoding="async" loading="lazy"> </div><div class="block lg:hidden w-full h-full relative" style="transform: translateZ(0);"> <img src="/assets/mobile-banner/1.webp" alt="mobile wallpaper 1" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 object-center" data-carousel-item="0" style="transform: translateZ(0); backface-visibility: hidden; will-change: opacity; filter: blur(1px);; opacity: 1;" decoding="async" loading="eager"><img src="/assets/mobile-banner/2.webp" alt="mobile wallpaper 2" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 object-center" data-carousel-item="1" style="transform: translateZ(0); backface-visibility: hidden; will-change: opacity; filter: blur(1px);; opacity: 0;" decoding="async" loading="lazy"><img src="/assets/mobile-banner/3.webp" alt="mobile wallpaper 3" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 object-center" data-carousel-item="2" style="transform: translateZ(0); backface-visibility: hidden; will-change: opacity; filter: blur(1px);; opacity: 0;" decoding="async" loading="lazy"><img src="/assets/mobile-banner/4.webp" alt="mobile wallpaper 4" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 object-center" data-carousel-item="3" style="transform: translateZ(0); backface-visibility: hidden; will-change: opacity; filter: blur(1px);; opacity: 0;" decoding="async" loading="lazy"><img src="/assets/mobile-banner/5.webp" alt="mobile wallpaper 5" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 object-center" data-carousel-item="4" style="transform: translateZ(0); backface-visibility: hidden; will-change: opacity; filter: blur(1px);; opacity: 0;" decoding="async" loading="lazy"><img src="/assets/mobile-banner/6.webp" alt="mobile wallpaper 6" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 object-center" data-carousel-item="5" style="transform: translateZ(0); backface-visibility: hidden; will-change: opacity; filter: blur(1px);; opacity: 0;" decoding="async" loading="lazy"> </div> </div> <script>(function(){const carouselInterval = 5;
+
+		function initFullscreenWallpaperCarousel() {
+			const container = document.querySelector('[data-fullscreen-wallpaper]');
+			if (!container) return;
+
+			if (window.__wallpaper_cleanup) {
+				window.__wallpaper_cleanup();
+				window.__wallpaper_cleanup = null;
+			}
+
+			const STORAGE_KEY = 'mizuki_wallpaper_index';
+			let savedIndex = parseInt(sessionStorage.getItem(STORAGE_KEY) || '0');
+
+			const groups = [
+				container.querySelectorAll('.hidden.lg\\:block [data-carousel-item]'),
+				container.querySelectorAll('.block.lg\\:hidden [data-carousel-item]')
+			];
+
+			const state = groups.map(items => {
+				const safeIndex = (savedIndex >= 0 && savedIndex < items.length) ? savedIndex : 0;
+				return {
+					items,
+					currentIndex: safeIndex,
+					timer: null,
+					active: items.length > 1
+				};
+			});
+
+			// 初始化显示：根据 savedIndex 立即修正图片显示
+			function initImage(stateItem) {
+				const { items, currentIndex } = stateItem;
+				// 立即设置样式，防止视觉上跳回第一张
+				for (let i = 0; i < items.length; i++) {
+					items[i].style.opacity = i === currentIndex ? '1' : '0';
+				}
+			}
+
+			// 切换下一张
+			function switchNextImage(stateItem) {
+				const { items, currentIndex } = stateItem;
+				const nextIndex = (currentIndex + 1) % items.length;
+				
+				items[currentIndex].style.opacity = '0';
+				items[nextIndex].style.opacity = '1';
+				
+				stateItem.currentIndex = nextIndex;
+
+				sessionStorage.setItem(STORAGE_KEY, nextIndex.toString());
+			}
+
+			function start() {
+				state.forEach(s => {
+					if (s.active && !s.timer) {
+						s.timer = setInterval(() => {
+							if (!document.body.contains(s.items[0])) {
+								stop();
+								return;
+							}
+							switchNextImage(s);
+						}, carouselInterval * 1000);
+					}
+				});
+			}
+
+			function stop() {
+				state.forEach(s => {
+					if (s.timer) {
+						clearInterval(s.timer);
+						s.timer = null;
+					}
+				});
+			}
+
+			const handleVisibilityChange = () => {
+				if (document.hidden) {
+					stop();
+				} else {
+					const exists = state.some(s => s.items.length > 0 && document.body.contains(s.items[0]));
+					if (exists) start();
+				}
+			};
+
+			// 初始化状态
+			state.forEach(s => {
+				if (s.items.length > 0) initImage(s);
+			});
+
+			start();
+
+			document.addEventListener('visibilitychange', handleVisibilityChange);
+
+			window.__wallpaper_cleanup = () => {
+				stop();
+				document.removeEventListener('visibilitychange', handleVisibilityChange);
+			};
+		}
+
+		// 页面加载完成后初始化轮播
+		if (document.readyState === 'loading') {
+			document.addEventListener('DOMContentLoaded', initFullscreenWallpaperCarousel);
+		} else {
+			initFullscreenWallpaperCarousel();
+		}
+	})();</script>  <!-- Iconify图标库加载器 --><script>(function(){const preloadIcons = [];
+const timeout = 10000;
+const retryCount = 3;
+
+  // 全局图标加载逻辑
+  (function() {
+    'use strict';
+    
+    // 避免重复加载
+    if (window.__iconifyLoaderInitialized) {
+      return;
+    }
+    window.__iconifyLoaderInitialized = true;
+
+    // 图标加载器类
+    class IconifyLoader {
+      constructor() {
+        this.isLoaded = false;
+        this.isLoading = false;
+        this.loadPromise = null;
+        this.observers = new Set();
+        this.preloadQueue = new Set();
+      }
+
+      async load(options = {}) {
+        const { timeout: loadTimeout = timeout, retryCount: maxRetries = retryCount } = options;
+        
+        if (this.isLoaded) {
+          return Promise.resolve();
+        }
+
+        if (this.isLoading && this.loadPromise) {
+          return this.loadPromise;
+        }
+
+        this.isLoading = true;
+        this.loadPromise = this.loadWithRetry(loadTimeout, maxRetries);
+
+        try {
+          await this.loadPromise;
+          this.isLoaded = true;
+          this.notifyObservers();
+          await this.processPreloadQueue();
+        } catch (error) {
+          console.error('Failed to load Iconify:', error);
+          throw error;
+        } finally {
+          this.isLoading = false;
+        }
+      }
+
+      async loadWithRetry(timeout, retryCount) {
+        for (let attempt = 1; attempt <= retryCount; attempt++) {
+          try {
+            await this.loadScript(timeout);
+            return;
+          } catch (error) {
+            console.warn(`Iconify load attempt ${attempt} failed:`, error);
+            
+            if (attempt === retryCount) {
+              throw new Error(`Failed to load Iconify after ${retryCount} attempts`);
+            }
+            
+            await new Promise(resolve => setTimeout(resolve, 1000));
+          }
+        }
+      }
+
+      loadScript(timeout) {
+        return new Promise((resolve, reject) => {
+          // 检查是否已经存在
+          if (this.isIconifyReady()) {
+            resolve();
+            return;
+          }
+
+          const existingScript = document.querySelector('script[src*="iconify-icon"]');
+          if (existingScript) {
+            this.waitForIconifyReady().then(resolve).catch(reject);
+            return;
+          }
+
+          const script = document.createElement('script');
+          script.src = 'https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js';
+          script.async = true;
+          script.crossOrigin = 'anonymous';
+
+          const timeoutId = setTimeout(() => {
+            script.remove();
+            reject(new Error('Script load timeout'));
+          }, timeout);
+
+          script.onload = () => {
+            clearTimeout(timeoutId);
+            this.waitForIconifyReady().then(resolve).catch(reject);
+          };
+
+          script.onerror = () => {
+            clearTimeout(timeoutId);
+            script.remove();
+            reject(new Error('Script load error'));
+          };
+
+          document.head.appendChild(script);
+        });
+      }
+
+      waitForIconifyReady(maxWait = 5000) {
+        return new Promise((resolve, reject) => {
+          const startTime = Date.now();
+          
+          const checkReady = () => {
+            if (this.isIconifyReady()) {
+              resolve();
+              return;
+            }
+            
+            if (Date.now() - startTime > maxWait) {
+              reject(new Error('Iconify initialization timeout'));
+              return;
+            }
+            
+            setTimeout(checkReady, 50);
+          };
+          
+          checkReady();
+        });
+      }
+
+      isIconifyReady() {
+        return typeof window !== 'undefined' && 
+               'customElements' in window && 
+               customElements.get('iconify-icon') !== undefined;
+      }
+
+      onLoad(callback) {
+        if (this.isLoaded) {
+          callback();
+        } else {
+          this.observers.add(callback);
+        }
+      }
+
+      notifyObservers() {
+        this.observers.forEach(callback => {
+          try {
+            callback();
+          } catch (error) {
+            console.error('Error in icon load observer:', error);
+          }
+        });
+        this.observers.clear();
+      }
+
+      addToPreloadQueue(icons) {
+        if (Array.isArray(icons)) {
+          icons.forEach(icon => this.preloadQueue.add(icon));
+        } else {
+          this.preloadQueue.add(icons);
+        }
+        
+        if (this.isLoaded) {
+          this.processPreloadQueue();
+        }
+      }
+
+      async processPreloadQueue() {
+        if (this.preloadQueue.size === 0) return;
+        
+        const iconsToLoad = Array.from(this.preloadQueue);
+        this.preloadQueue.clear();
+        
+        await this.preloadIcons(iconsToLoad);
+      }
+
+      async preloadIcons(icons) {
+        if (!this.isLoaded || icons.length === 0) return;
+
+        return new Promise((resolve) => {
+          let loadedCount = 0;
+          const totalIcons = icons.length;
+          const tempElements = [];
+
+          const cleanup = () => {
+            tempElements.forEach(el => {
+              if (el.parentNode) {
+                el.parentNode.removeChild(el);
+              }
+            });
+          };
+
+          const checkComplete = () => {
+            loadedCount++;
+            if (loadedCount >= totalIcons) {
+              cleanup();
+              resolve();
+            }
+          };
+
+          icons.forEach(icon => {
+            const tempIcon = document.createElement('iconify-icon');
+            tempIcon.setAttribute('icon', icon);
+            tempIcon.style.cssText = 'position:absolute;top:-9999px;left:-9999px;width:1px;height:1px;opacity:0;pointer-events:none;';
+            
+            tempIcon.addEventListener('load', checkComplete);
+            tempIcon.addEventListener('error', checkComplete);
+            
+            tempElements.push(tempIcon);
+            document.body.appendChild(tempIcon);
+          });
+
+          // 设置超时清理
+          setTimeout(() => {
+            cleanup();
+            resolve();
+          }, 3000);
+        });
+      }
+    }
+
+    // 创建全局实例
+    window.__iconifyLoader = new IconifyLoader();
+
+    // 立即开始加载
+    window.__iconifyLoader.load().catch(error => {
+      console.error('Failed to initialize Iconify:', error);
+    });
+
+    // 如果有预加载图标，添加到队列
+    if (preloadIcons && preloadIcons.length > 0) {
+      window.__iconifyLoader.addToPreloadQueue(preloadIcons);
+    }
+
+    // 导出便捷函数到全局
+    window.loadIconify = () => window.__iconifyLoader?.load();
+    window.preloadIcons = (icons) => window.__iconifyLoader?.addToPreloadQueue(icons);
+    window.onIconifyReady = (callback) => {
+      return window.__iconifyLoader?.onLoad ? window.__iconifyLoader.onLoad(callback) : null;
+    };
+
+    // 页面可见性变化时重新检查
+    document.addEventListener('visibilitychange', () => {
+      if (!document.hidden && !window.__iconifyLoader.isLoaded) {
+        window.__iconifyLoader.load().catch(console.error);
+      }
+    });
+
+  })();
+})();</script> <!-- 为不支持JavaScript的情况提供备用方案 --><noscript><style>
+    iconify-icon {
+      display: none;
+    }
+    .icon-fallback {
+      display: inline-block;
+    }
+  </style></noscript>   <div id="top-row" class="z-50 pointer-events-none relative transition-all duration-700 max-w-[var(--page-width)] px-0 md:px-4 mx-auto" data-astro-cid-haiuh7kc> <div id="navbar-wrapper" class="pointer-events-auto sticky top-0 transition-all" data-astro-cid-haiuh7kc> <div id="navbar" class="z-50 onload-animation" data-transparent-mode="semifull" data-is-home="false"> <div class="absolute h-8 left-0 right-0 -top-8 bg-[var(--card-bg)] transition"></div> <!-- used for onload animation --> <div class="!overflow-visible max-w-[var(--page-width)] h-[4.5rem] mx-auto flex items-center justify-between px-4"> <a href="/" class="btn-plain scale-animation rounded-lg h-[3.25rem] px-5 font-bold active:scale-95"> <div class="flex flex-row items-center text-md">   <img src="/assets/home/home.png" alt="翎" class="h-[1.75rem] w-[1.75rem] mb-1 mr-2 object-contain" loading="lazy"> <span class="dark:text-white text-black">翎</span>  </div> </a> <div class="hidden md:flex items-center space-x-1"> <div class="dropdown-container" data-dropdown data-astro-cid-qou34bit> <a aria-label="Home" href="/" class="btn-plain scale-animation rounded-lg h-11 font-bold px-5 active:scale-95" data-astro-cid-qou34bit> <div class="flex items-center" data-astro-cid-qou34bit> <svg width="1em" height="1em" class="text-[1.1rem] mr-2" data-astro-cid-qou34bit="true" data-icon="material-symbols:home">   <symbol id="ai:material-symbols:home" viewBox="0 0 24 24"><path fill="currentColor" d="M4 21V9l8-6l8 6v12h-6v-7h-4v7z"/></symbol><use href="#ai:material-symbols:home"></use>  </svg> Home  </div> </a> </div>  <script type="module">document.addEventListener("DOMContentLoaded",function(){const s=document.querySelectorAll("[data-dropdown]");s.forEach(t=>{const e=t.querySelector("[data-dropdown-trigger]"),o=t.querySelector("[data-dropdown-menu]"),n=t.querySelectorAll(".dropdown-item");!e||!o||(e.addEventListener("keydown",function(i){const r=i;r.key==="Enter"||r.key===" "?(i.preventDefault(),f(t,e,o)):r.key==="ArrowDown"?(i.preventDefault(),d(t,e,o),n.length>0&&n[0].focus()):r.key==="Escape"&&a(t,e,o)}),n.forEach((i,r)=>{i.addEventListener("keydown",function(c){const l=c;if(l.key==="ArrowDown"){c.preventDefault();const u=(r+1)%n.length;n[u].focus()}else if(l.key==="ArrowUp"){c.preventDefault();const u=(r-1+n.length)%n.length;n[u].focus()}else l.key==="Escape"&&(a(t,e,o),e.focus())})}))}),document.addEventListener("click",function(t){s.forEach(e=>{if(!e.contains(t.target)){const o=e.querySelector("[data-dropdown-trigger]"),n=e.querySelector("[data-dropdown-menu]");o&&n&&a(e,o,n)}})})});function f(s,t,e){t.getAttribute("aria-expanded")==="true"?a(s,t,e):d(s,t,e)}function d(s,t,e){t.setAttribute("aria-expanded","true"),e.classList.remove("opacity-0","invisible","pointer-events-none","translate-y-[-8px]"),e.classList.add("opacity-100","visible","pointer-events-auto","translate-y-0")}function a(s,t,e){t.setAttribute("aria-expanded","false"),e.classList.add("opacity-0","invisible","pointer-events-none","translate-y-[-8px]"),e.classList.remove("opacity-100","visible","pointer-events-auto","translate-y-0")}</script><div class="dropdown-container" data-dropdown data-astro-cid-qou34bit> <a aria-label="Archive" href="/archive/" class="btn-plain scale-animation rounded-lg h-11 font-bold px-5 active:scale-95" data-astro-cid-qou34bit> <div class="flex items-center" data-astro-cid-qou34bit> <svg width="1em" height="1em" class="text-[1.1rem] mr-2" data-astro-cid-qou34bit="true" data-icon="material-symbols:archive">   <symbol id="ai:material-symbols:archive" viewBox="0 0 24 24"><path fill="currentColor" d="m12 18l4-4l-1.4-1.4l-1.6 1.6V10h-2v4.2l-1.6-1.6L8 14zm-7 3q-.825 0-1.412-.587T3 19V6.525q0-.35.113-.675t.337-.6L4.7 3.725q.275-.35.687-.538T6.25 3h11.5q.45 0 .863.188t.687.537l1.25 1.525q.225.275.338.6t.112.675V19q0 .825-.587 1.413T19 21zm.4-15h13.2l-.85-1H6.25z"/></symbol><use href="#ai:material-symbols:archive"></use>  </svg> Archive  </div> </a> </div>  <div class="dropdown-container" data-dropdown data-astro-cid-qou34bit> <button class="btn-plain scale-animation rounded-lg h-11 font-bold px-5 active:scale-95 dropdown-trigger" aria-expanded="false" aria-haspopup="true" data-dropdown-trigger data-astro-cid-qou34bit> <div class="flex items-center" data-astro-cid-qou34bit> <svg width="1em" height="1em" class="text-[1.1rem] mr-2" data-astro-cid-qou34bit="true" data-icon="material-symbols:link">   <symbol id="ai:material-symbols:link" viewBox="0 0 24 24"><path fill="currentColor" d="M11 17H7q-2.075 0-3.537-1.463T2 12t1.463-3.537T7 7h4v2H7q-1.25 0-2.125.875T4 12t.875 2.125T7 15h4zm-3-4v-2h8v2zm5 4v-2h4q1.25 0 2.125-.875T20 12t-.875-2.125T17 9h-4V7h4q2.075 0 3.538 1.463T22 12t-1.463 3.538T17 17z"/></symbol><use href="#ai:material-symbols:link"></use>  </svg> Links <svg width="1em" height="1em" class="text-[1.25rem] transition-transform duration-200 dropdown-arrow ml-1" data-astro-cid-qou34bit="true" data-icon="material-symbols:keyboard-arrow-down-rounded">   <symbol id="ai:material-symbols:keyboard-arrow-down-rounded" viewBox="0 0 24 24"><path fill="currentColor" d="M12 14.975q-.2 0-.375-.062T11.3 14.7l-4.6-4.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275l3.9 3.9l3.9-3.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-4.6 4.6q-.15.15-.325.213t-.375.062"/></symbol><use href="#ai:material-symbols:keyboard-arrow-down-rounded"></use>  </svg> </div> </button>
+		<div class="dropdown-menu" data-dropdown-menu data-astro-cid-qou34bit> <div class="dropdown-content" data-astro-cid-qou34bit> <a href="https://github.com/Snow-Kal" target="_blank" class="dropdown-item" aria-label="GitHub" data-astro-cid-qou34bit> <div class="flex items-center" data-astro-cid-qou34bit> <svg width="0.97em" height="1em" viewBox="0 0 496 512" class="text-[1rem] mr-2" data-astro-cid-qou34bit="true" data-icon="fa6-brands:github">   <use href="#ai:fa6-brands:github"></use>  </svg> <span data-astro-cid-qou34bit>GitHub</span> </div> <svg width="1em" height="1em" class="text-[0.75rem] text-black/25 dark:text-white/25" data-astro-cid-qou34bit="true" data-icon="fa6-solid:arrow-up-right-from-square">   <symbol id="ai:fa6-solid:arrow-up-right-from-square" viewBox="0 0 512 512"><path fill="currentColor" d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32zM80 32C35.8 32 0 67.8 0 112v320c0 44.2 35.8 80 80 80h320c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32v112c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16h112c17.7 0 32-14.3 32-32s-14.3-32-32-32z"/></symbol><use href="#ai:fa6-solid:arrow-up-right-from-square"></use>  </svg> </a><a href="https://space.bilibili.com/400953112" target="_blank" class="dropdown-item" aria-label="Bilibili" data-astro-cid-qou34bit> <div class="flex items-center" data-astro-cid-qou34bit> <svg width="1em" height="1em" viewBox="0 0 512 512" class="text-[1rem] mr-2" data-astro-cid-qou34bit="true" data-icon="fa6-brands:bilibili">   <use href="#ai:fa6-brands:bilibili"></use>  </svg> <span data-astro-cid-qou34bit>Bilibili</span> </div> <svg width="1em" height="1em" viewBox="0 0 512 512" class="text-[0.75rem] text-black/25 dark:text-white/25" data-astro-cid-qou34bit="true" data-icon="fa6-solid:arrow-up-right-from-square">   <use href="#ai:fa6-solid:arrow-up-right-from-square"></use>  </svg> </a> </div> </div> </div>  <div class="dropdown-container" data-dropdown data-astro-cid-qou34bit> <button class="btn-plain scale-animation rounded-lg h-11 font-bold px-5 active:scale-95 dropdown-trigger" aria-expanded="false" aria-haspopup="true" data-dropdown-trigger data-astro-cid-qou34bit> <div class="flex items-center" data-astro-cid-qou34bit> <svg width="1em" height="1em" class="text-[1.1rem] mr-2" data-astro-cid-qou34bit="true" data-icon="material-symbols:person">   <symbol id="ai:material-symbols:person" viewBox="0 0 24 24"><path fill="currentColor" d="M12 12q-1.65 0-2.825-1.175T8 8t1.175-2.825T12 4t2.825 1.175T16 8t-1.175 2.825T12 12m-8 8v-2.8q0-.85.438-1.562T5.6 14.55q1.55-.775 3.15-1.162T12 13t3.25.388t3.15 1.162q.725.375 1.163 1.088T20 17.2V20z"/></symbol><use href="#ai:material-symbols:person"></use>  </svg> My <svg width="1em" height="1em" viewBox="0 0 24 24" class="text-[1.25rem] transition-transform duration-200 dropdown-arrow ml-1" data-astro-cid-qou34bit="true" data-icon="material-symbols:keyboard-arrow-down-rounded">   <use href="#ai:material-symbols:keyboard-arrow-down-rounded"></use>  </svg> </div> </button>
+		<div class="dropdown-menu" data-dropdown-menu data-astro-cid-qou34bit> <div class="dropdown-content" data-astro-cid-qou34bit> <a href="/anime/" class="dropdown-item" aria-label="Anime" data-astro-cid-qou34bit> <div class="flex items-center" data-astro-cid-qou34bit> <svg width="1em" height="1em" class="text-[1rem] mr-2" data-astro-cid-qou34bit="true" data-icon="material-symbols:movie">   <symbol id="ai:material-symbols:movie" viewBox="0 0 24 24"><path fill="currentColor" d="m4 4l2 4h3L7 4h2l2 4h3l-2-4h2l2 4h3l-2-4h3q.825 0 1.413.588T22 6v12q0 .825-.587 1.413T20 20H4q-.825 0-1.412-.587T2 18V6q0-.825.588-1.412T4 4"/></symbol><use href="#ai:material-symbols:movie"></use>  </svg> <span data-astro-cid-qou34bit>Anime</span> </div>  </a><a href="/diary/" class="dropdown-item" aria-label="Diary" data-astro-cid-qou34bit> <div class="flex items-center" data-astro-cid-qou34bit> <svg width="1em" height="1em" class="text-[1rem] mr-2" data-astro-cid-qou34bit="true" data-icon="material-symbols:book">   <symbol id="ai:material-symbols:book" viewBox="0 0 24 24"><path fill="currentColor" d="M6 22q-.825 0-1.412-.587T4 20V4q0-.825.588-1.412T6 2h12q.825 0 1.413.588T20 4v16q0 .825-.587 1.413T18 22zm5-11l2.5-1.5L16 11V4h-5z"/></symbol><use href="#ai:material-symbols:book"></use>  </svg> <span data-astro-cid-qou34bit>Diary</span> </div>  </a><a href="/albums/" class="dropdown-item" aria-label="Gallery" data-astro-cid-qou34bit> <div class="flex items-center" data-astro-cid-qou34bit> <svg width="1em" height="1em" class="text-[1rem] mr-2" data-astro-cid-qou34bit="true" data-icon="material-symbols:photo-library">   <symbol id="ai:material-symbols:photo-library" viewBox="0 0 24 24"><path fill="currentColor" d="M9 14h10l-3.45-4.5l-2.3 3l-1.55-2zm-1 4q-.825 0-1.412-.587T6 16V4q0-.825.588-1.412T8 2h12q.825 0 1.413.588T22 4v12q0 .825-.587 1.413T20 18zm-4 4q-.825 0-1.412-.587T2 20V6h2v14h14v2z"/></symbol><use href="#ai:material-symbols:photo-library"></use>  </svg> <span data-astro-cid-qou34bit>Albums</span> </div>  </a><a href="/devices/" class="dropdown-item" aria-label="Devices" data-astro-cid-qou34bit> <div class="flex items-center" data-astro-cid-qou34bit> <svg width="1em" height="1em" class="text-[1rem] mr-2" data-astro-cid-qou34bit="true" data-icon="material-symbols:devices">   <symbol id="ai:material-symbols:devices" viewBox="0 0 24 24"><path fill="currentColor" d="M5 17q-.825 0-1.412-.587T3 15V6q0-.825.588-1.412T5 4h14q.825 0 1.413.588T21 6h-5.5q-1.45 0-2.475 1.025T12 9.5V17zm10.5 3q-.625 0-1.062-.437T14 18.5v-9q0-.625.438-1.062T15.5 8h5q.625 0 1.063.438T22 9.5v9q0 .625-.437 1.063T20.5 20zM2 20v-2h10v2zm16-7.5q.325 0 .538-.225t.212-.525q0-.325-.213-.537T18 11q-.3 0-.525.213t-.225.537q0 .3.225.525T18 12.5"/></symbol><use href="#ai:material-symbols:devices"></use>  </svg> <span data-astro-cid-qou34bit>My Devices</span> </div>  </a> </div> </div> </div>  <div class="dropdown-container" data-dropdown data-astro-cid-qou34bit> <button class="btn-plain scale-animation rounded-lg h-11 font-bold px-5 active:scale-95 dropdown-trigger" aria-expanded="false" aria-haspopup="true" data-dropdown-trigger data-astro-cid-qou34bit> <div class="flex items-center" data-astro-cid-qou34bit> <svg width="1em" height="1em" class="text-[1.1rem] mr-2" data-astro-cid-qou34bit="true" data-icon="material-symbols:info">   <symbol id="ai:material-symbols:info" viewBox="0 0 24 24"><path fill="currentColor" d="M11 17h2v-6h-2zm1-8q.425 0 .713-.288T13 8t-.288-.712T12 7t-.712.288T11 8t.288.713T12 9m0 13q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22"/></symbol><use href="#ai:material-symbols:info"></use>  </svg> About <svg width="1em" height="1em" viewBox="0 0 24 24" class="text-[1.25rem] transition-transform duration-200 dropdown-arrow ml-1" data-astro-cid-qou34bit="true" data-icon="material-symbols:keyboard-arrow-down-rounded">   <use href="#ai:material-symbols:keyboard-arrow-down-rounded"></use>  </svg> </div> </button>
+		<div class="dropdown-menu" data-dropdown-menu data-astro-cid-qou34bit> <div class="dropdown-content" data-astro-cid-qou34bit> <a href="/about/" class="dropdown-item" aria-label="About" data-astro-cid-qou34bit> <div class="flex items-center" data-astro-cid-qou34bit> <svg width="1em" height="1em" viewBox="0 0 24 24" class="text-[1rem] mr-2" data-astro-cid-qou34bit="true" data-icon="material-symbols:person">   <use href="#ai:material-symbols:person"></use>  </svg> <span data-astro-cid-qou34bit>About</span> </div>  </a><a href="/friends/" class="dropdown-item" aria-label="Friends" data-astro-cid-qou34bit> <div class="flex items-center" data-astro-cid-qou34bit> <svg width="1em" height="1em" class="text-[1rem] mr-2" data-astro-cid-qou34bit="true" data-icon="material-symbols:group">   <symbol id="ai:material-symbols:group" viewBox="0 0 24 24"><path fill="currentColor" d="M1 20v-2.8q0-.85.438-1.562T2.6 14.55q1.55-.775 3.15-1.162T9 13t3.25.388t3.15 1.162q.725.375 1.163 1.088T17 17.2V20zm18 0v-3q0-1.1-.612-2.113T16.65 13.15q1.275.15 2.4.513t2.1.887q.9.5 1.375 1.112T23 17v3zM9 12q-1.65 0-2.825-1.175T5 8t1.175-2.825T9 4t2.825 1.175T13 8t-1.175 2.825T9 12m10-4q0 1.65-1.175 2.825T15 12q-.275 0-.7-.062t-.7-.138q.675-.8 1.038-1.775T15 8t-.362-2.025T13.6 4.2q.35-.125.7-.163T15 4q1.65 0 2.825 1.175T19 8"/></symbol><use href="#ai:material-symbols:group"></use>  </svg> <span data-astro-cid-qou34bit>Friends</span> </div>  </a> </div> </div> </div>  <div class="dropdown-container" data-dropdown data-astro-cid-qou34bit> <button class="btn-plain scale-animation rounded-lg h-11 font-bold px-5 active:scale-95 dropdown-trigger" aria-expanded="false" aria-haspopup="true" data-dropdown-trigger data-astro-cid-qou34bit> <div class="flex items-center" data-astro-cid-qou34bit> <svg width="1em" height="1em" class="text-[1.1rem] mr-2" data-astro-cid-qou34bit="true" data-icon="material-symbols:more-horiz">   <symbol id="ai:material-symbols:more-horiz" viewBox="0 0 24 24"><path fill="currentColor" d="M6 14q-.825 0-1.412-.587T4 12t.588-1.412T6 10t1.413.588T8 12t-.587 1.413T6 14m6 0q-.825 0-1.412-.587T10 12t.588-1.412T12 10t1.413.588T14 12t-.587 1.413T12 14m6 0q-.825 0-1.412-.587T16 12t.588-1.412T18 10t1.413.588T20 12t-.587 1.413T18 14"/></symbol><use href="#ai:material-symbols:more-horiz"></use>  </svg> Others <svg width="1em" height="1em" viewBox="0 0 24 24" class="text-[1.25rem] transition-transform duration-200 dropdown-arrow ml-1" data-astro-cid-qou34bit="true" data-icon="material-symbols:keyboard-arrow-down-rounded">   <use href="#ai:material-symbols:keyboard-arrow-down-rounded"></use>  </svg> </div> </button>
+		<div class="dropdown-menu" data-dropdown-menu data-astro-cid-qou34bit> <div class="dropdown-content" data-astro-cid-qou34bit> <a href="/projects/" class="dropdown-item" aria-label="Projects" data-astro-cid-qou34bit> <div class="flex items-center" data-astro-cid-qou34bit> <svg width="1em" height="1em" class="text-[1rem] mr-2" data-astro-cid-qou34bit="true" data-icon="material-symbols:work">   <symbol id="ai:material-symbols:work" viewBox="0 0 24 24"><path fill="currentColor" d="M4 21q-.825 0-1.412-.587T2 19V8q0-.825.588-1.412T4 6h4V4q0-.825.588-1.412T10 2h4q.825 0 1.413.588T16 4v2h4q.825 0 1.413.588T22 8v11q0 .825-.587 1.413T20 21zm6-15h4V4h-4z"/></symbol><use href="#ai:material-symbols:work"></use>  </svg> <span data-astro-cid-qou34bit>Projects</span> </div>  </a><a href="/skills/" class="dropdown-item" aria-label="Skills" data-astro-cid-qou34bit> <div class="flex items-center" data-astro-cid-qou34bit> <svg width="1em" height="1em" class="text-[1rem] mr-2" data-astro-cid-qou34bit="true" data-icon="material-symbols:psychology">   <symbol id="ai:material-symbols:psychology" viewBox="0 0 24 24"><path fill="currentColor" d="M11 15h2l.15-1.25q.2-.075.363-.175t.287-.225l1.15.5l1-1.7l-1-.75q.05-.2.05-.4t-.05-.4l1-.75l-1-1.7l-1.15.5q-.125-.125-.288-.225t-.362-.175L13 7h-2l-.15 1.25q-.2.075-.363.175t-.287.225l-1.15-.5l-1 1.7l1 .75Q9 10.8 9 11t.05.4l-1 .75l1 1.7l1.15-.5q.125.125.288.225t.362.175zm1-2.5q-.625 0-1.062-.437T10.5 11t.438-1.062T12 9.5t1.063.438T13.5 11t-.437 1.063T12 12.5M6 22v-4.3q-1.425-1.3-2.212-3.037T3 11q0-3.75 2.625-6.375T12 2q3.125 0 5.538 1.838t3.137 4.787l1.3 5.125q.125.475-.175.863T21 15h-2v3q0 .825-.587 1.413T17 20h-2v2z"/></symbol><use href="#ai:material-symbols:psychology"></use>  </svg> <span data-astro-cid-qou34bit>Skills</span> </div>  </a><a href="/timeline/" class="dropdown-item" aria-label="Timeline" data-astro-cid-qou34bit> <div class="flex items-center" data-astro-cid-qou34bit> <svg width="1em" height="1em" class="text-[1rem] mr-2" data-astro-cid-qou34bit="true" data-icon="material-symbols:timeline">   <symbol id="ai:material-symbols:timeline" viewBox="0 0 24 24"><path fill="currentColor" d="M3 18q-.825 0-1.412-.587T1 16t.588-1.412T3 14h.263q.112 0 .237.05L8.05 9.5Q8 9.375 8 9.262V9q0-.825.588-1.412T10 7t1.413.588T12 9q0 .05-.05.5l2.55 2.55q.125-.05.238-.05h.525q.112 0 .237.05l3.55-3.55Q19 8.375 19 8.262V8q0-.825.588-1.412T21 6t1.413.588T23 8t-.587 1.413T21 10h-.262q-.113 0-.238-.05l-3.55 3.55q.05.125.05.238V14q0 .825-.587 1.413T15 16t-1.412-.587T13 14v-.262q0-.113.05-.238l-2.55-2.55q-.125.05-.238.05H10q-.05 0-.5-.05L4.95 15.5q.05.125.05.238V16q0 .825-.587 1.413T3 18"/></symbol><use href="#ai:material-symbols:timeline"></use>  </svg> <span data-astro-cid-qou34bit>Timeline</span> </div>  </a> </div> </div> </div>   </div> <div class="flex"> <!--<SearchPanel client:load>--> <style>astro-island,astro-slot,astro-static-slot{display:contents}</style><script>(()=>{var e=async t=>{await(await t())()};(self.Astro||(self.Astro={})).only=e;window.dispatchEvent(new Event("astro:only"));})();</script><script>(()=>{var A=Object.defineProperty;var g=(i,o,a)=>o in i?A(i,o,{enumerable:!0,configurable:!0,writable:!0,value:a}):i[o]=a;var d=(i,o,a)=>g(i,typeof o!="symbol"?o+"":o,a);{let i={0:t=>m(t),1:t=>a(t),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(a(t)),5:t=>new Set(a(t)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(t),9:t=>new Uint16Array(t),10:t=>new Uint32Array(t),11:t=>1/0*t},o=t=>{let[l,e]=t;return l in i?i[l](e):void 0},a=t=>t.map(o),m=t=>typeof t!="object"||t===null?t:Object.fromEntries(Object.entries(t).map(([l,e])=>[l,o(e)]));class y extends HTMLElement{constructor(){super(...arguments);d(this,"Component");d(this,"hydrator");d(this,"hydrate",async()=>{var b;if(!this.hydrator||!this.isConnected)return;let e=(b=this.parentElement)==null?void 0:b.closest("astro-island[ssr]");if(e){e.addEventListener("astro:hydrate",this.hydrate,{once:!0});return}let c=this.querySelectorAll("astro-slot"),n={},h=this.querySelectorAll("template[data-astro-template]");for(let r of h){let s=r.closest(this.tagName);s!=null&&s.isSameNode(this)&&(n[r.getAttribute("data-astro-template")||"default"]=r.innerHTML,r.remove())}for(let r of c){let s=r.closest(this.tagName);s!=null&&s.isSameNode(this)&&(n[r.getAttribute("name")||"default"]=r.innerHTML)}let p;try{p=this.hasAttribute("props")?m(JSON.parse(this.getAttribute("props"))):{}}catch(r){let s=this.getAttribute("component-url")||"<unknown>",v=this.getAttribute("component-export");throw v&&(s+=` (export ${v})`),console.error(`[hydrate] Error parsing props for component ${s}`,this.getAttribute("props"),r),r}let u;await this.hydrator(this)(this.Component,p,n,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),this.dispatchEvent(new CustomEvent("astro:hydrate"))});d(this,"unmount",()=>{this.isConnected||this.dispatchEvent(new CustomEvent("astro:unmount"))})}disconnectedCallback(){document.removeEventListener("astro:after-swap",this.unmount),document.addEventListener("astro:after-swap",this.unmount,{once:!0})}connectedCallback(){if(!this.hasAttribute("await-children")||document.readyState==="interactive"||document.readyState==="complete")this.childrenConnectedCallback();else{let e=()=>{document.removeEventListener("DOMContentLoaded",e),c.disconnect(),this.childrenConnectedCallback()},c=new MutationObserver(()=>{var n;((n=this.lastChild)==null?void 0:n.nodeType)===Node.COMMENT_NODE&&this.lastChild.nodeValue==="astro:end"&&(this.lastChild.remove(),e())});c.observe(this,{childList:!0}),document.addEventListener("DOMContentLoaded",e)}}async childrenConnectedCallback(){let e=this.getAttribute("before-hydration-url");e&&await import(e),this.start()}async start(){let e=JSON.parse(this.getAttribute("opts")),c=this.getAttribute("client");if(Astro[c]===void 0){window.addEventListener(`astro:${c}`,()=>this.start(),{once:!0});return}try{await Astro[c](async()=>{let n=this.getAttribute("renderer-url"),[h,{default:p}]=await Promise.all([import(this.getAttribute("component-url")),n?import(n):()=>()=>{}]),u=this.getAttribute("component-export")||"default";if(!u.includes("."))this.Component=h[u];else{this.Component=h;for(let f of u.split("."))this.Component=this.Component[f]}return this.hydrator=p,this.hydrate},e,this)}catch(n){console.error(`[astro-island] Error hydrating ${this.getAttribute("component-url")}`,n)}}attributeChangedCallback(){this.hydrate()}}d(y,"observedAttributes",["props"]),customElements.get("astro-island")||customElements.define("astro-island",y)}})();</script><astro-island uid="1iHExk" component-url="/_astro/Search.DVjhlQz7.js" component-export="default" renderer-url="/_astro/client.svelte.DbMTLn5Q.js" props="{}" ssr client="only" opts="{&quot;name&quot;:&quot;Search&quot;,&quot;value&quot;:&quot;svelte&quot;}"></astro-island> <astro-island uid="dRxkq" component-url="/_astro/MobileTOC.DjbwcDau.js" component-export="default" renderer-url="/_astro/client.svelte.DbMTLn5Q.js" props="{}" ssr client="only" opts="{&quot;name&quot;:&quot;MobileTOC&quot;,&quot;value&quot;:&quot;svelte&quot;}"></astro-island> <button aria-label="Display Settings" class="btn-plain scale-animation rounded-lg h-11 w-11 active:scale-90" id="display-settings-switch"> <svg width="1em" height="1em" class="text-[1.25rem]" data-icon="material-symbols:palette-outline">   <symbol id="ai:material-symbols:palette-outline" viewBox="0 0 24 24"><path fill="currentColor" d="M12 22q-2.05 0-3.875-.788t-3.187-2.15t-2.15-3.187T2 12q0-2.075.813-3.9t2.2-3.175T8.25 2.788T12.2 2q2 0 3.775.688t3.113 1.9t2.125 2.875T22 11.05q0 2.875-1.75 4.413T16 17h-1.85q-.225 0-.312.125t-.088.275q0 .3.375.863t.375 1.287q0 1.25-.687 1.85T12 22m-5.5-9q.65 0 1.075-.425T8 11.5t-.425-1.075T6.5 10t-1.075.425T5 11.5t.425 1.075T6.5 13m3-4q.65 0 1.075-.425T11 7.5t-.425-1.075T9.5 6t-1.075.425T8 7.5t.425 1.075T9.5 9m5 0q.65 0 1.075-.425T16 7.5t-.425-1.075T14.5 6t-1.075.425T13 7.5t.425 1.075T14.5 9m3 4q.65 0 1.075-.425T19 11.5t-.425-1.075T17.5 10t-1.075.425T16 11.5t.425 1.075T17.5 13M12 20q.225 0 .363-.125t.137-.325q0-.35-.375-.825T11.75 17.3q0-1.05.725-1.675T14.25 15H16q1.65 0 2.825-.962T20 11.05q0-3.025-2.312-5.038T12.2 4Q8.8 4 6.4 6.325T4 12q0 3.325 2.338 5.663T12 20"/></symbol><use href="#ai:material-symbols:palette-outline"></use>  </svg> </button> <astro-island uid="2vYCdm" component-url="/_astro/LayoutSwitchButton.CDg8J3KR.js" component-export="default" renderer-url="/_astro/client.svelte.DbMTLn5Q.js" props="{&quot;currentLayout&quot;:[0,&quot;list&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;LayoutSwitchButton&quot;,&quot;value&quot;:&quot;svelte&quot;}"></astro-island> <!-- 整体布局方案切换按钮：根据配置决定在哪些设备上显示 --> <div class="hidden md:block"> <astro-island uid="LVipG" component-url="/_astro/WallpaperSwitch.D9KAaNgR.js" component-export="default" renderer-url="/_astro/client.svelte.DbMTLn5Q.js" props="{}" ssr client="only" opts="{&quot;name&quot;:&quot;WallpaperSwitch&quot;,&quot;value&quot;:&quot;svelte&quot;}"></astro-island> </div> <astro-island uid="26ohxp" component-url="/_astro/LightDarkSwitch.CE8PCi5X.js" component-export="default" renderer-url="/_astro/client.svelte.DbMTLn5Q.js" props="{}" ssr client="only" opts="{&quot;name&quot;:&quot;LightDarkSwitch&quot;,&quot;value&quot;:&quot;svelte&quot;}"></astro-island> <button aria-label="Menu" name="Nav Menu" class="btn-plain scale-animation rounded-lg w-11 h-11 active:scale-90 md:!hidden" id="nav-menu-switch"> <svg width="1em" height="1em" class="text-[1.25rem]" data-icon="material-symbols:menu-rounded">   <symbol id="ai:material-symbols:menu-rounded" viewBox="0 0 24 24"><path fill="currentColor" d="M4 18q-.425 0-.712-.288T3 17t.288-.712T4 16h16q.425 0 .713.288T21 17t-.288.713T20 18zm0-5q-.425 0-.712-.288T3 12t.288-.712T4 11h16q.425 0 .713.288T21 12t-.288.713T20 13zm0-5q-.425 0-.712-.288T3 7t.288-.712T4 6h16q.425 0 .713.288T21 7t-.288.713T20 8z"/></symbol><use href="#ai:material-symbols:menu-rounded"></use>  </svg> </button> </div> <div id="nav-menu-panel" class="float-panel float-panel-closed absolute transition-all fixed right-4 px-2 py-2 max-h-[80vh] overflow-y-auto" data-astro-cid-h5lvqo6o> <div class="mobile-menu-item" data-astro-cid-h5lvqo6o> <!-- 普通链接项目 -->
+                <a href="/" class="group flex justify-between items-center py-2 pl-3 pr-1 rounded-lg gap-8
+                    hover:bg-[var(--btn-plain-bg-hover)] active:bg-[var(--btn-plain-bg-active)] transition
+                " data-astro-cid-h5lvqo6o> <div class="flex items-center transition text-black/75 dark:text-white/75 font-bold group-hover:text-[var(--primary)] group-active:text-[var(--primary)]" data-astro-cid-h5lvqo6o> <svg width="1em" height="1em" viewBox="0 0 24 24" class="text-[1.1rem] mr-2" data-astro-cid-h5lvqo6o="true" data-icon="material-symbols:home">   <use href="#ai:material-symbols:home"></use>  </svg> Home </div> <svg width="1em" height="1em" class="transition text-[1.25rem] text-[var(--primary)]" data-astro-cid-h5lvqo6o="true" data-icon="material-symbols:chevron-right-rounded">   <symbol id="ai:material-symbols:chevron-right-rounded" viewBox="0 0 24 24"><path fill="currentColor" d="M12.6 12L8.7 8.1q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275l4.6 4.6q.15.15.213.325t.062.375t-.062.375t-.213.325l-4.6 4.6q-.275.275-.7.275t-.7-.275t-.275-.7t.275-.7z"/></symbol><use href="#ai:material-symbols:chevron-right-rounded"></use>  </svg>  </a> </div><div class="mobile-menu-item" data-astro-cid-h5lvqo6o> <!-- 普通链接项目 -->
+                <a href="/archive/" class="group flex justify-between items-center py-2 pl-3 pr-1 rounded-lg gap-8
+                    hover:bg-[var(--btn-plain-bg-hover)] active:bg-[var(--btn-plain-bg-active)] transition
+                " data-astro-cid-h5lvqo6o> <div class="flex items-center transition text-black/75 dark:text-white/75 font-bold group-hover:text-[var(--primary)] group-active:text-[var(--primary)]" data-astro-cid-h5lvqo6o> <svg width="1em" height="1em" viewBox="0 0 24 24" class="text-[1.1rem] mr-2" data-astro-cid-h5lvqo6o="true" data-icon="material-symbols:archive">   <use href="#ai:material-symbols:archive"></use>  </svg> Archive </div> <svg width="1em" height="1em" viewBox="0 0 24 24" class="transition text-[1.25rem] text-[var(--primary)]" data-astro-cid-h5lvqo6o="true" data-icon="material-symbols:chevron-right-rounded">   <use href="#ai:material-symbols:chevron-right-rounded"></use>  </svg>  </a> </div><div class="mobile-menu-item" data-astro-cid-h5lvqo6o> <!-- 有子菜单的项目 -->
+                <div class="mobile-dropdown" data-mobile-dropdown data-astro-cid-h5lvqo6o> <button class="group flex justify-between items-center py-2 pl-3 pr-1 rounded-lg gap-8 w-full text-left
+                            hover:bg-[var(--btn-plain-bg-hover)] active:bg-[var(--btn-plain-bg-active)] transition" data-mobile-dropdown-trigger aria-expanded="false" data-astro-cid-h5lvqo6o> <div class="flex items-center transition text-black/75 dark:text-white/75 font-bold group-hover:text-[var(--primary)] group-active:text-[var(--primary)]" data-astro-cid-h5lvqo6o> <svg width="1em" height="1em" viewBox="0 0 24 24" class="text-[1.1rem] mr-2" data-astro-cid-h5lvqo6o="true" data-icon="material-symbols:link">   <use href="#ai:material-symbols:link"></use>  </svg> Links </div> <svg width="1em" height="1em" viewBox="0 0 24 24" class="transition text-[1.25rem] text-[var(--primary)] mobile-dropdown-arrow duration-200" data-astro-cid-h5lvqo6o="true" data-icon="material-symbols:keyboard-arrow-down-rounded">   <use href="#ai:material-symbols:keyboard-arrow-down-rounded"></use>  </svg> </button> <div class="mobile-submenu" data-mobile-submenu data-astro-cid-h5lvqo6o> <a href="https://github.com/Snow-Kal" class="group flex justify-between items-center py-2 pl-6 pr-1 rounded-lg gap-8
+                                   hover:bg-[var(--btn-plain-bg-hover)] active:bg-[var(--btn-plain-bg-active)] transition" target="_blank" data-astro-cid-h5lvqo6o> <div class="flex items-center transition text-black/60 dark:text-white/60 font-medium group-hover:text-[var(--primary)] group-active:text-[var(--primary)]" data-astro-cid-h5lvqo6o> <svg width="0.97em" height="1em" viewBox="0 0 496 512" class="text-[1.1rem] mr-2" data-astro-cid-h5lvqo6o="true" data-icon="fa6-brands:github">   <use href="#ai:fa6-brands:github"></use>  </svg> GitHub </div> <svg width="1em" height="1em" viewBox="0 0 512 512" class="transition text-[0.75rem] text-black/25 dark:text-white/25 -translate-x-1" data-astro-cid-h5lvqo6o="true" data-icon="fa6-solid:arrow-up-right-from-square">   <use href="#ai:fa6-solid:arrow-up-right-from-square"></use>  </svg> </a><a href="https://space.bilibili.com/400953112" class="group flex justify-between items-center py-2 pl-6 pr-1 rounded-lg gap-8
+                                   hover:bg-[var(--btn-plain-bg-hover)] active:bg-[var(--btn-plain-bg-active)] transition" target="_blank" data-astro-cid-h5lvqo6o> <div class="flex items-center transition text-black/60 dark:text-white/60 font-medium group-hover:text-[var(--primary)] group-active:text-[var(--primary)]" data-astro-cid-h5lvqo6o> <svg width="1em" height="1em" viewBox="0 0 512 512" class="text-[1.1rem] mr-2" data-astro-cid-h5lvqo6o="true" data-icon="fa6-brands:bilibili">   <use href="#ai:fa6-brands:bilibili"></use>  </svg> Bilibili </div> <svg width="1em" height="1em" viewBox="0 0 512 512" class="transition text-[0.75rem] text-black/25 dark:text-white/25 -translate-x-1" data-astro-cid-h5lvqo6o="true" data-icon="fa6-solid:arrow-up-right-from-square">   <use href="#ai:fa6-solid:arrow-up-right-from-square"></use>  </svg> </a> </div> </div> </div><div class="mobile-menu-item" data-astro-cid-h5lvqo6o> <!-- 有子菜单的项目 -->
+                <div class="mobile-dropdown" data-mobile-dropdown data-astro-cid-h5lvqo6o> <button class="group flex justify-between items-center py-2 pl-3 pr-1 rounded-lg gap-8 w-full text-left
+                            hover:bg-[var(--btn-plain-bg-hover)] active:bg-[var(--btn-plain-bg-active)] transition" data-mobile-dropdown-trigger aria-expanded="false" data-astro-cid-h5lvqo6o> <div class="flex items-center transition text-black/75 dark:text-white/75 font-bold group-hover:text-[var(--primary)] group-active:text-[var(--primary)]" data-astro-cid-h5lvqo6o> <svg width="1em" height="1em" viewBox="0 0 24 24" class="text-[1.1rem] mr-2" data-astro-cid-h5lvqo6o="true" data-icon="material-symbols:person">   <use href="#ai:material-symbols:person"></use>  </svg> My </div> <svg width="1em" height="1em" viewBox="0 0 24 24" class="transition text-[1.25rem] text-[var(--primary)] mobile-dropdown-arrow duration-200" data-astro-cid-h5lvqo6o="true" data-icon="material-symbols:keyboard-arrow-down-rounded">   <use href="#ai:material-symbols:keyboard-arrow-down-rounded"></use>  </svg> </button> <div class="mobile-submenu" data-mobile-submenu data-astro-cid-h5lvqo6o> <a href="/anime/" class="group flex justify-between items-center py-2 pl-6 pr-1 rounded-lg gap-8
+                                   hover:bg-[var(--btn-plain-bg-hover)] active:bg-[var(--btn-plain-bg-active)] transition" data-astro-cid-h5lvqo6o> <div class="flex items-center transition text-black/60 dark:text-white/60 font-medium group-hover:text-[var(--primary)] group-active:text-[var(--primary)]" data-astro-cid-h5lvqo6o> <svg width="1em" height="1em" viewBox="0 0 24 24" class="text-[1.1rem] mr-2" data-astro-cid-h5lvqo6o="true" data-icon="material-symbols:movie">   <use href="#ai:material-symbols:movie"></use>  </svg> Anime </div>  </a><a href="/diary/" class="group flex justify-between items-center py-2 pl-6 pr-1 rounded-lg gap-8
+                                   hover:bg-[var(--btn-plain-bg-hover)] active:bg-[var(--btn-plain-bg-active)] transition" data-astro-cid-h5lvqo6o> <div class="flex items-center transition text-black/60 dark:text-white/60 font-medium group-hover:text-[var(--primary)] group-active:text-[var(--primary)]" data-astro-cid-h5lvqo6o> <svg width="1em" height="1em" viewBox="0 0 24 24" class="text-[1.1rem] mr-2" data-astro-cid-h5lvqo6o="true" data-icon="material-symbols:book">   <use href="#ai:material-symbols:book"></use>  </svg> Diary </div>  </a><a href="/albums/" class="group flex justify-between items-center py-2 pl-6 pr-1 rounded-lg gap-8
+                                   hover:bg-[var(--btn-plain-bg-hover)] active:bg-[var(--btn-plain-bg-active)] transition" data-astro-cid-h5lvqo6o> <div class="flex items-center transition text-black/60 dark:text-white/60 font-medium group-hover:text-[var(--primary)] group-active:text-[var(--primary)]" data-astro-cid-h5lvqo6o> <svg width="1em" height="1em" viewBox="0 0 24 24" class="text-[1.1rem] mr-2" data-astro-cid-h5lvqo6o="true" data-icon="material-symbols:photo-library">   <use href="#ai:material-symbols:photo-library"></use>  </svg> Albums </div>  </a><a href="/devices/" class="group flex justify-between items-center py-2 pl-6 pr-1 rounded-lg gap-8
+                                   hover:bg-[var(--btn-plain-bg-hover)] active:bg-[var(--btn-plain-bg-active)] transition" data-astro-cid-h5lvqo6o> <div class="flex items-center transition text-black/60 dark:text-white/60 font-medium group-hover:text-[var(--primary)] group-active:text-[var(--primary)]" data-astro-cid-h5lvqo6o> <svg width="1em" height="1em" viewBox="0 0 24 24" class="text-[1.1rem] mr-2" data-astro-cid-h5lvqo6o="true" data-icon="material-symbols:devices">   <use href="#ai:material-symbols:devices"></use>  </svg> My Devices </div>  </a> </div> </div> </div><div class="mobile-menu-item" data-astro-cid-h5lvqo6o> <!-- 有子菜单的项目 -->
+                <div class="mobile-dropdown" data-mobile-dropdown data-astro-cid-h5lvqo6o> <button class="group flex justify-between items-center py-2 pl-3 pr-1 rounded-lg gap-8 w-full text-left
+                            hover:bg-[var(--btn-plain-bg-hover)] active:bg-[var(--btn-plain-bg-active)] transition" data-mobile-dropdown-trigger aria-expanded="false" data-astro-cid-h5lvqo6o> <div class="flex items-center transition text-black/75 dark:text-white/75 font-bold group-hover:text-[var(--primary)] group-active:text-[var(--primary)]" data-astro-cid-h5lvqo6o> <svg width="1em" height="1em" viewBox="0 0 24 24" class="text-[1.1rem] mr-2" data-astro-cid-h5lvqo6o="true" data-icon="material-symbols:info">   <use href="#ai:material-symbols:info"></use>  </svg> About </div> <svg width="1em" height="1em" viewBox="0 0 24 24" class="transition text-[1.25rem] text-[var(--primary)] mobile-dropdown-arrow duration-200" data-astro-cid-h5lvqo6o="true" data-icon="material-symbols:keyboard-arrow-down-rounded">   <use href="#ai:material-symbols:keyboard-arrow-down-rounded"></use>  </svg> </button> <div class="mobile-submenu" data-mobile-submenu data-astro-cid-h5lvqo6o> <a href="/about/" class="group flex justify-between items-center py-2 pl-6 pr-1 rounded-lg gap-8
+                                   hover:bg-[var(--btn-plain-bg-hover)] active:bg-[var(--btn-plain-bg-active)] transition" data-astro-cid-h5lvqo6o> <div class="flex items-center transition text-black/60 dark:text-white/60 font-medium group-hover:text-[var(--primary)] group-active:text-[var(--primary)]" data-astro-cid-h5lvqo6o> <svg width="1em" height="1em" viewBox="0 0 24 24" class="text-[1.1rem] mr-2" data-astro-cid-h5lvqo6o="true" data-icon="material-symbols:person">   <use href="#ai:material-symbols:person"></use>  </svg> About </div>  </a><a href="/friends/" class="group flex justify-between items-center py-2 pl-6 pr-1 rounded-lg gap-8
+                                   hover:bg-[var(--btn-plain-bg-hover)] active:bg-[var(--btn-plain-bg-active)] transition" data-astro-cid-h5lvqo6o> <div class="flex items-center transition text-black/60 dark:text-white/60 font-medium group-hover:text-[var(--primary)] group-active:text-[var(--primary)]" data-astro-cid-h5lvqo6o> <svg width="1em" height="1em" viewBox="0 0 24 24" class="text-[1.1rem] mr-2" data-astro-cid-h5lvqo6o="true" data-icon="material-symbols:group">   <use href="#ai:material-symbols:group"></use>  </svg> Friends </div>  </a> </div> </div> </div><div class="mobile-menu-item" data-astro-cid-h5lvqo6o> <!-- 有子菜单的项目 -->
+                <div class="mobile-dropdown" data-mobile-dropdown data-astro-cid-h5lvqo6o> <button class="group flex justify-between items-center py-2 pl-3 pr-1 rounded-lg gap-8 w-full text-left
+                            hover:bg-[var(--btn-plain-bg-hover)] active:bg-[var(--btn-plain-bg-active)] transition" data-mobile-dropdown-trigger aria-expanded="false" data-astro-cid-h5lvqo6o> <div class="flex items-center transition text-black/75 dark:text-white/75 font-bold group-hover:text-[var(--primary)] group-active:text-[var(--primary)]" data-astro-cid-h5lvqo6o> <svg width="1em" height="1em" viewBox="0 0 24 24" class="text-[1.1rem] mr-2" data-astro-cid-h5lvqo6o="true" data-icon="material-symbols:more-horiz">   <use href="#ai:material-symbols:more-horiz"></use>  </svg> Others </div> <svg width="1em" height="1em" viewBox="0 0 24 24" class="transition text-[1.25rem] text-[var(--primary)] mobile-dropdown-arrow duration-200" data-astro-cid-h5lvqo6o="true" data-icon="material-symbols:keyboard-arrow-down-rounded">   <use href="#ai:material-symbols:keyboard-arrow-down-rounded"></use>  </svg> </button> <div class="mobile-submenu" data-mobile-submenu data-astro-cid-h5lvqo6o> <a href="/projects/" class="group flex justify-between items-center py-2 pl-6 pr-1 rounded-lg gap-8
+                                   hover:bg-[var(--btn-plain-bg-hover)] active:bg-[var(--btn-plain-bg-active)] transition" data-astro-cid-h5lvqo6o> <div class="flex items-center transition text-black/60 dark:text-white/60 font-medium group-hover:text-[var(--primary)] group-active:text-[var(--primary)]" data-astro-cid-h5lvqo6o> <svg width="1em" height="1em" viewBox="0 0 24 24" class="text-[1.1rem] mr-2" data-astro-cid-h5lvqo6o="true" data-icon="material-symbols:work">   <use href="#ai:material-symbols:work"></use>  </svg> Projects </div>  </a><a href="/skills/" class="group flex justify-between items-center py-2 pl-6 pr-1 rounded-lg gap-8
+                                   hover:bg-[var(--btn-plain-bg-hover)] active:bg-[var(--btn-plain-bg-active)] transition" data-astro-cid-h5lvqo6o> <div class="flex items-center transition text-black/60 dark:text-white/60 font-medium group-hover:text-[var(--primary)] group-active:text-[var(--primary)]" data-astro-cid-h5lvqo6o> <svg width="1em" height="1em" viewBox="0 0 24 24" class="text-[1.1rem] mr-2" data-astro-cid-h5lvqo6o="true" data-icon="material-symbols:psychology">   <use href="#ai:material-symbols:psychology"></use>  </svg> Skills </div>  </a><a href="/timeline/" class="group flex justify-between items-center py-2 pl-6 pr-1 rounded-lg gap-8
+                                   hover:bg-[var(--btn-plain-bg-hover)] active:bg-[var(--btn-plain-bg-active)] transition" data-astro-cid-h5lvqo6o> <div class="flex items-center transition text-black/60 dark:text-white/60 font-medium group-hover:text-[var(--primary)] group-active:text-[var(--primary)]" data-astro-cid-h5lvqo6o> <svg width="1em" height="1em" viewBox="0 0 24 24" class="text-[1.1rem] mr-2" data-astro-cid-h5lvqo6o="true" data-icon="material-symbols:timeline">   <use href="#ai:material-symbols:timeline"></use>  </svg> Timeline </div>  </a> </div> </div> </div> </div>  <script type="module">document.addEventListener("DOMContentLoaded",function(){const r=document.querySelectorAll("[data-mobile-dropdown]");r.forEach(e=>{const t=e.querySelector("[data-mobile-dropdown-trigger]"),d=e.querySelector("[data-mobile-submenu]");!t||!d||t.addEventListener("click",function(o){o.preventDefault();const u=e.getAttribute("data-expanded")==="true";r.forEach(a=>{if(a!==e){a.setAttribute("data-expanded","false");const i=a.querySelector("[data-mobile-dropdown-trigger]");i&&i.setAttribute("aria-expanded","false")}});const n=!u;e.setAttribute("data-expanded",n.toString()),t.setAttribute("aria-expanded",n.toString())})})});</script> <astro-island uid="Z12eXvQ" component-url="/_astro/DisplaySettings.CQGaZoev.js" component-export="default" renderer-url="/_astro/client.svelte.DbMTLn5Q.js" props="{}" ssr client="only" opts="{&quot;name&quot;:&quot;DisplaySettings&quot;,&quot;value&quot;:&quot;svelte&quot;}"></astro-island> </div> </div> <script type="module" src="/_astro/Navbar.astro_astro_type_script_index_0_lang.CG_b4Ss8.js"></script> <script>(function(){const scriptUrl = "/pagefind/pagefind.js";
+
+async function loadPagefind() {
+    try {
+        const response = await fetch(scriptUrl, { method: 'HEAD' });
+        if (!response.ok) {
+            throw new Error(`Pagefind script not found: ${response.status}`);
+        }
+
+        const pagefind = await import(scriptUrl);
+
+        await pagefind.options({
+            excerptLength: 20
+        });
+
+        window.pagefind = pagefind;
+
+        document.dispatchEvent(new CustomEvent('pagefindready'));
+        console.log('Pagefind loaded and initialized successfully, event dispatched.');
+    } catch (error) {
+        console.error('Failed to load Pagefind:', error);
+        window.pagefind = {
+            search: () => Promise.resolve({ results: [] }),
+            options: () => Promise.resolve(),
+        };
+        document.dispatchEvent(new CustomEvent('pagefindloaderror'));
+        console.log('Pagefind load error, event dispatched.');
+    }
+}
+
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', loadPagefind);
+} else {
+    loadPagefind();
+}
+})();</script> </div> </div>  <div id="banner-wrapper" class="absolute z-10 w-full transition duration-700 overflow-hidden mobile-hide-banner" style="top: -30vh" data-astro-cid-haiuh7kc> <!-- Carousel mode for multiple images -->
+        <div id="banner-carousel" class="relative h-full w-full" data-astro-cid-haiuh7kc> <ul class="carousel-list h-full w-full" data-astro-cid-haiuh7kc> <li class="carousel-item absolute inset-0 transition-all duration-500 opacity-100 scale-100" data-astro-cid-haiuh7kc> <!-- Mobile: use mobile-specific images with same logic as desktop --> <div class="block lg:hidden object-cover h-full w-full transition-transform duration-500 ease-out overflow-hidden relative"> <div class="transition absolute inset-0 dark:bg-black/10 bg-opacity-50 pointer-events-none"></div>  <img src="/assets/mobile-banner/1.webp" alt="Mobile banner image 1" class="w-full h-full object-cover" style="object-position: center" loading="eager"> </div> <!-- Desktop: use desktop-specific images --> <div class="hidden lg:block object-cover h-full w-full transition-transform duration-500 ease-out overflow-hidden relative"> <div class="transition absolute inset-0 dark:bg-black/10 bg-opacity-50 pointer-events-none"></div>  <img src="/assets/desktop-banner/1.webp" alt="Desktop banner image 1" class="w-full h-full object-cover" style="object-position: center" loading="eager"> </div> </li><li class="carousel-item absolute inset-0 transition-all duration-500 opacity-0 scale-110" data-astro-cid-haiuh7kc> <!-- Mobile: use mobile-specific images with same logic as desktop --> <div class="block lg:hidden object-cover h-full w-full transition-transform duration-500 ease-out overflow-hidden relative"> <div class="transition absolute inset-0 dark:bg-black/10 bg-opacity-50 pointer-events-none"></div>  <img src="/assets/mobile-banner/2.webp" alt="Mobile banner image 2" class="w-full h-full object-cover" style="object-position: center" loading="lazy"> </div> <!-- Desktop: use desktop-specific images --> <div class="hidden lg:block object-cover h-full w-full transition-transform duration-500 ease-out overflow-hidden relative"> <div class="transition absolute inset-0 dark:bg-black/10 bg-opacity-50 pointer-events-none"></div>  <img src="/assets/desktop-banner/2.webp" alt="Desktop banner image 2" class="w-full h-full object-cover" style="object-position: center" loading="lazy"> </div> </li><li class="carousel-item absolute inset-0 transition-all duration-500 opacity-0 scale-110" data-astro-cid-haiuh7kc> <!-- Mobile: use mobile-specific images with same logic as desktop --> <div class="block lg:hidden object-cover h-full w-full transition-transform duration-500 ease-out overflow-hidden relative"> <div class="transition absolute inset-0 dark:bg-black/10 bg-opacity-50 pointer-events-none"></div>  <img src="/assets/mobile-banner/3.webp" alt="Mobile banner image 3" class="w-full h-full object-cover" style="object-position: center" loading="lazy"> </div> <!-- Desktop: use desktop-specific images --> <div class="hidden lg:block object-cover h-full w-full transition-transform duration-500 ease-out overflow-hidden relative"> <div class="transition absolute inset-0 dark:bg-black/10 bg-opacity-50 pointer-events-none"></div>  <img src="/assets/desktop-banner/3.webp" alt="Desktop banner image 3" class="w-full h-full object-cover" style="object-position: center" loading="lazy"> </div> </li><li class="carousel-item absolute inset-0 transition-all duration-500 opacity-0 scale-110" data-astro-cid-haiuh7kc> <!-- Mobile: use mobile-specific images with same logic as desktop --> <div class="block lg:hidden object-cover h-full w-full transition-transform duration-500 ease-out overflow-hidden relative"> <div class="transition absolute inset-0 dark:bg-black/10 bg-opacity-50 pointer-events-none"></div>  <img src="/assets/mobile-banner/4.webp" alt="Mobile banner image 4" class="w-full h-full object-cover" style="object-position: center" loading="lazy"> </div> <!-- Desktop: use desktop-specific images --> <div class="hidden lg:block object-cover h-full w-full transition-transform duration-500 ease-out overflow-hidden relative"> <div class="transition absolute inset-0 dark:bg-black/10 bg-opacity-50 pointer-events-none"></div>  <img src="/assets/desktop-banner/4.webp" alt="Desktop banner image 4" class="w-full h-full object-cover" style="object-position: center" loading="lazy"> </div> </li><li class="carousel-item absolute inset-0 transition-all duration-500 opacity-0 scale-110" data-astro-cid-haiuh7kc> <!-- Mobile: use mobile-specific images with same logic as desktop --> <div class="block lg:hidden object-cover h-full w-full transition-transform duration-500 ease-out overflow-hidden relative"> <div class="transition absolute inset-0 dark:bg-black/10 bg-opacity-50 pointer-events-none"></div>  <img src="/assets/mobile-banner/5.webp" alt="Mobile banner image 5" class="w-full h-full object-cover" style="object-position: center" loading="lazy"> </div> <!-- Desktop: use desktop-specific images --> <div class="hidden lg:block object-cover h-full w-full transition-transform duration-500 ease-out overflow-hidden relative"> <div class="transition absolute inset-0 dark:bg-black/10 bg-opacity-50 pointer-events-none"></div>  <img src="/assets/desktop-banner/5.webp" alt="Desktop banner image 5" class="w-full h-full object-cover" style="object-position: center" loading="lazy"> </div> </li><li class="carousel-item absolute inset-0 transition-all duration-500 opacity-0 scale-110" data-astro-cid-haiuh7kc> <!-- Mobile: use mobile-specific images with same logic as desktop --> <div class="block lg:hidden object-cover h-full w-full transition-transform duration-500 ease-out overflow-hidden relative"> <div class="transition absolute inset-0 dark:bg-black/10 bg-opacity-50 pointer-events-none"></div>  <img src="/assets/mobile-banner/6.webp" alt="Mobile banner image 6" class="w-full h-full object-cover" style="object-position: center" loading="lazy"> </div> <!-- Desktop: use desktop-specific images --> <div class="hidden lg:block object-cover h-full w-full transition-transform duration-500 ease-out overflow-hidden relative"> <div class="transition absolute inset-0 dark:bg-black/10 bg-opacity-50 pointer-events-none"></div>  <img src="/assets/desktop-banner/6.webp" alt="Desktop banner image 6" class="w-full h-full object-cover" style="object-position: center" loading="lazy"> </div> </li> </ul> </div> <!-- Home page text overlay --> <div class="banner-text-overlay absolute inset-0 z-20 flex items-center justify-center hidden" data-astro-cid-haiuh7kc> <div class="w-4/5 lg:w-3/4 text-center mb-0" data-astro-cid-haiuh7kc> <div class="flex flex-col" data-astro-cid-haiuh7kc> <h1 class="banner-title text-6xl lg:text-8xl text-white drop-shadow-lg mb-2 lg:mb-4" data-astro-cid-haiuh7kc> 循此苦旅,以达群星 </h1> <h2 class="banner-subtitle text-xl lg:text-3xl text-white/90 drop-shadow-md" data-astro-cid-haiuh7kc> <span class="inline-block min-h-[1.2em]" data-astro-cid-haiuh7kc> <span class="typewriter " data-text="[&#34;相信的心就是你的魔法！&#34;]" data-speed="100" data-delete-speed="50" data-pause-time="2000" data-astro-cid-4iv2rnoh></span> <script type="module">class n{element;texts;currentTextIndex=0;speed;deleteSpeed;pauseTime;currentIndex=0;isDeleting=!1;timeoutId=null;constructor(t){this.element=t;const e=t.dataset.text||"";try{const i=JSON.parse(e);this.texts=Array.isArray(i)?i:[e]}catch{this.texts=[e]}this.speed=parseInt(t.dataset.speed||"100"),this.deleteSpeed=parseInt(t.dataset.deleteSpeed||"50"),this.pauseTime=parseInt(t.dataset.pauseTime||"2000"),this.texts.length>1&&!this.isTypewriterEnabled()?this.showRandomText():this.start()}isTypewriterEnabled(){return this.element.dataset.speed!==void 0||this.element.dataset.deleteSpeed!==void 0||this.element.dataset.pauseTime!==void 0}showRandomText(){const t=Math.floor(Math.random()*this.texts.length);this.element.textContent=this.texts[t]}start(){this.texts.length!==0&&this.type()}getCurrentText(){return this.texts[this.currentTextIndex]||""}type(){const t=this.getCurrentText();this.isDeleting?this.currentIndex>0?(this.currentIndex--,this.element.textContent=t.substring(0,this.currentIndex),this.timeoutId=window.setTimeout(()=>this.type(),this.deleteSpeed)):(this.isDeleting=!1,this.currentTextIndex=(this.currentTextIndex+1)%this.texts.length,this.timeoutId=window.setTimeout(()=>this.type(),this.speed)):this.currentIndex<t.length?(this.currentIndex++,this.element.textContent=t.substring(0,this.currentIndex),this.timeoutId=window.setTimeout(()=>this.type(),this.speed)):this.texts.length>1?(this.isDeleting=!0,this.timeoutId=window.setTimeout(()=>this.type(),this.pauseTime)):this.texts.length===1&&this.texts[0]===""&&(this.element.innerHTML="&nbsp;")}destroy(){this.timeoutId&&clearTimeout(this.timeoutId)}}document.addEventListener("DOMContentLoaded",()=>{document.querySelectorAll(".typewriter").forEach(t=>{new n(t)})});document.addEventListener("swup:contentReplaced",()=>{document.querySelectorAll(".typewriter").forEach(t=>{new n(t)})});</script>  </span> </h2> </div> </div> </div> <!-- Water waves effect -->  </div>  <div class="absolute w-full z-30 pointer-events-none mobile-main-no-banner  " style="top: 35vh" data-astro-cid-haiuh7kc> <!-- The pointer-events-none here prevent blocking the click event of the TOC --> <div class="relative max-w-[var(--page-width)] mx-auto pointer-events-auto" data-astro-cid-haiuh7kc> <div id="main-grid" class="transition duration-700 w-full left-0 right-0 grid grid-cols-1 grid-cols-1 lg:grid-cols-[17.5rem_1fr] lg:grid-cols-[17.5rem_1fr_17.5rem] grid-rows-[auto_1fr_auto] lg:grid-rows-[auto] mx-auto gap-4 px-2 md:px-4  mobile-both-sidebar" data-layout-mode="list" data-astro-cid-haiuh7kc> <!-- Banner image credit -->  <div id="sidebar" class="mb-4 row-start-2 row-end-3 col-span-1 onload-animation block block row-start-2 row-end-3 col-span-1 lg:block lg:row-start-1 lg:row-end-2 lg:max-w-[17.5rem] lg:col-start-1 lg:col-end-2  w-full" data-astro-cid-gfmxq3pg> <!-- 顶部固定组件区域 --> <div class="flex flex-col w-full gap-4 mb-4" data-astro-cid-gfmxq3pg> <div class="card-base p-3"> <a aria-label="Go to About Page" href="/about/" class="group block relative mx-auto mt-1 lg:mx-0 lg:mt-0 mb-3
+       max-w-[12rem] lg:max-w-none overflow-hidden rounded-xl active:scale-95"> <div class="absolute transition pointer-events-none group-hover:bg-black/30 group-active:bg-black/50
+        w-full h-full z-50 flex items-center justify-center"> <svg width="1.13em" height="1em" class="transition opacity-0 scale-90 group-hover:scale-100 group-hover:opacity-100 text-white text-5xl" data-icon="fa6-regular:address-card">   <symbol id="ai:fa6-regular:address-card" viewBox="0 0 576 512"><path fill="currentColor" d="M512 80c8.8 0 16 7.2 16 16v320c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V96c0-8.8 7.2-16 16-16zM64 32C28.7 32 0 60.7 0 96v320c0 35.3 28.7 64 64 64h448c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64zm144 224a64 64 0 1 0 0-128a64 64 0 1 0 0 128m-32 32c-44.2 0-80 35.8-80 80c0 8.8 7.2 16 16 16h192c8.8 0 16-7.2 16-16c0-44.2-35.8-80-80-80zm200-144c-13.3 0-24 10.7-24 24s10.7 24 24 24h80c13.3 0 24-10.7 24-24s-10.7-24-24-24zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24h80c13.3 0 24-10.7 24-24s-10.7-24-24-24z"/></symbol><use href="#ai:fa6-regular:address-card"></use>  </svg> </div> <div class="mx-auto lg:w-full h-full lg:mt-0  overflow-hidden relative"> <div class="transition absolute inset-0 dark:bg-black/10 bg-opacity-50 pointer-events-none"></div> <img src="/_astro/avatar.DW9l412__BOCNB.webp" alt="Profile Image of the Author" style="object-position: center" loading="lazy" decoding="async" fetchpriority="auto" width="1075" height="1050" class="w-full h-full object-cover">  </div> </a> <div class="px-2"> <div class="font-bold text-xl text-center mb-1 dark:text-neutral-50 transition">翎</div> <div class="h-1 w-5 bg-[var(--primary)] mx-auto rounded-full mb-2 transition"></div> <div class="text-center text-neutral-400 mb-2.5 transition"> <span class="typewriter inline-block" data-text="欢迎来到狗窝喵~" data-speed="80" data-delete-speed="50" data-pause-time="2000" data-astro-cid-4iv2rnoh></span>   </div> <div class="flex gap-2 justify-center mb-1"> <a rel="me" aria-label="Bilibli" href="https://space.bilibili.com/400953112" target="_blank" class="btn-regular rounded-lg h-10 w-10 active:scale-90"> <svg width="1em" height="1em" class="text-[1.5rem]" data-icon="fa6-brands:bilibili">   <symbol id="ai:fa6-brands:bilibili" viewBox="0 0 512 512"><path fill="currentColor" d="M488.6 104.1c16.7 18.1 24.4 39.7 23.3 65.7v202.4c-.4 26.4-9.2 48.1-26.5 65.1c-17.2 17-39.1 25.9-65.5 26.7H92.02c-26.45-.8-48.21-9.8-65.28-27.2C9.682 419.4.767 396.5 0 368.2V169.8c.767-26 9.682-47.6 26.74-65.7C43.81 87.75 65.57 78.77 92.02 78h29.38L96.05 52.19c-5.75-5.73-8.63-13-8.63-21.79c0-8.8 2.88-16.06 8.63-21.797C101.8 2.868 109.1 0 117.9 0q13.2 0 21.9 8.603L213.1 78h88l74.5-69.397C381.7 2.868 389.2 0 398 0q13.2 0 21.9 8.603c5.7 5.737 8.6 12.997 8.6 21.797c0 8.79-2.9 16.06-8.6 21.79L394.6 78h29.3c26.4.77 48 9.75 64.7 26.1m-38.8 69.7c-.4-9.6-3.7-17.4-10.7-23.5c-5.2-6.1-14-9.4-22.7-9.8H96.05c-9.59.4-17.45 3.7-23.58 9.8c-6.14 6.1-9.4 13.9-9.78 23.5v194.4c0 9.2 3.26 17 9.78 23.5s14.38 9.8 23.58 9.8H416.4c9.2 0 17-3.3 23.3-9.8s9.7-14.3 10.1-23.5zm-264.3 42.7c6.3 6.3 9.7 14.1 10.1 23.2V273c-.4 9.2-3.7 16.9-9.8 23.2c-6.2 6.3-14 9.5-23.6 9.5s-17.5-3.2-23.6-9.5s-9.4-14-9.8-23.2v-33.3c.4-9.1 3.8-16.9 10.1-23.2s13.2-9.6 23.3-10c9.2.4 17 3.7 23.3 10m191.5 0c6.3 6.3 9.7 14.1 10.1 23.2V273c-.4 9.2-3.7 16.9-9.8 23.2s-14 9.5-23.6 9.5s-17.4-3.2-23.6-9.5c-7-6.3-9.4-14-9.7-23.2v-33.3c.3-9.1 3.7-16.9 10-23.2s14.1-9.6 23.3-10c9.2.4 17 3.7 23.3 10"/></symbol><use href="#ai:fa6-brands:bilibili"></use>  </svg> </a><a rel="me" aria-label="GitHub" href="https://github.com/Snow-Kal" target="_blank" class="btn-regular rounded-lg h-10 w-10 active:scale-90"> <svg width="0.97em" height="1em" class="text-[1.5rem]" data-icon="fa6-brands:github">   <symbol id="ai:fa6-brands:github" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6c-3.3.3-5.6-1.3-5.6-3.6c0-2 2.3-3.6 5.2-3.6c3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9c2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9c.3 2 2.9 3.3 5.9 2.6c2.9-.7 4.9-2.6 4.6-4.6c-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2c12.8 2.3 17.3-5.6 17.3-12.1c0-6.2-.3-40.4-.3-61.4c0 0-70 15-84.7-29.8c0 0-11.4-29.1-27.8-36.6c0 0-22.9-15.7 1.6-15.4c0 0 24.9 2 38.6 25.8c21.9 38.6 58.6 27.5 72.9 20.9c2.3-16 8.8-27.1 16-33.7c-55.9-6.2-112.3-14.3-112.3-110.5c0-27.5 7.6-41.3 23.6-58.9c-2.6-6.5-11.1-33.3 2.6-67.9c20.9-6.5 69 27 69 27c20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27c13.7 34.7 5.2 61.4 2.6 67.9c16 17.7 25.8 31.5 25.8 58.9c0 96.5-58.9 104.2-114.8 110.5c9.2 7.9 17 22.9 17 46.4c0 33.7-.3 75.4-.3 83.6c0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252C496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2c1.6 1.6 3.9 2.3 5.2 1c1.3-1 1-3.3-.7-5.2c-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9c1.6 1 3.6.7 4.3-.7c.7-1.3-.3-2.9-2.3-3.9c-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2c2.3 2.3 5.2 2.6 6.5 1c1.3-1.3.7-4.3-1.3-6.2c-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2c-1.4-2.3-4-3.3-5.6-2"/></symbol><use href="#ai:fa6-brands:github"></use>  </svg> </a>  </div>  </div> </div> <widget-layout data-id="tags" data-is-collapsed="false" class="pb-4 card-base onload-animation" style="animation-delay: 250ms; --collapsedHeight: 7.5rem;" data-astro-cid-ucso7hve="true"> <div class="font-bold transition text-lg text-neutral-900 dark:text-neutral-100 relative ml-8 mt-4 mb-2 flex items-center
+        before:w-1 before:h-4 before:rounded-md before:bg-[var(--primary)]
+        before:absolute before:left-[-16px] before:top-[5.5px]" data-astro-cid-ucso7hve style="--collapsedHeight: 7.5rem;"> Tags  </div> <div id="tags" class="collapse-wrapper px-4 overflow-hidden" data-astro-cid-ucso7hve style="--collapsedHeight: 7.5rem;">  <div class="flex gap-2 flex-wrap"> <a href="/archive/?tag=Blogging" aria-label="View all posts with the Blogging tag" class="btn-regular h-8 text-sm px-3 rounded-lg">  Blogging </a><a href="/archive/?tag=Customization" aria-label="View all posts with the Customization tag" class="btn-regular h-8 text-sm px-3 rounded-lg">  Customization </a><a href="/archive/?tag=Mizuki" aria-label="View all posts with the Mizuki tag" class="btn-regular h-8 text-sm px-3 rounded-lg">  Mizuki </a> </div>  </div>  </widget-layout>  <script type="module">class d extends HTMLElement{constructor(){if(super(),this.dataset.isCollapsed!=="true")return;const e=this.dataset.id,t=this.querySelector(".expand-btn"),s=this.querySelector(`#${e}`);t.addEventListener("click",()=>{s.classList.remove("collapsed"),t.classList.add("hidden")})}}customElements.get("widget-layout")||customElements.define("widget-layout",d);</script> </div> <!-- 粘性组件区域 --> <div id="sidebar-sticky" class="transition-all duration-700 flex flex-col w-full gap-4 top-4 sticky top-4" data-astro-cid-gfmxq3pg> <widget-layout data-id="categories" data-is-collapsed="false" class="pb-4 card-base onload-animation" style="animation-delay: 150ms; --collapsedHeight: 7.5rem;" data-astro-cid-ucso7hve="true"> <div class="font-bold transition text-lg text-neutral-900 dark:text-neutral-100 relative ml-8 mt-4 mb-2 flex items-center
+        before:w-1 before:h-4 before:rounded-md before:bg-[var(--primary)]
+        before:absolute before:left-[-16px] before:top-[5.5px]" data-astro-cid-ucso7hve style="--collapsedHeight: 7.5rem;"> Categories  </div> <div id="categories" class="collapse-wrapper px-4 overflow-hidden" data-astro-cid-ucso7hve style="--collapsedHeight: 7.5rem;"> <a href="/archive/?category=Guides" aria-label="View all posts in the Guides category"> <button class="
+            w-full
+            h-10
+            rounded-lg
+            bg-none
+            hover:bg-[var(--btn-plain-bg-hover)]
+            active:bg-[var(--btn-plain-bg-active)]
+            transition-all
+            pl-2
+            hover:pl-3
+            
+            text-neutral-700
+            hover:text-[var(--primary)]
+            dark:text-neutral-300
+            dark:hover:text-[var(--primary)]
+        "> <div class="flex items-center justify-between relative mr-2"> <div class="overflow-hidden text-left whitespace-nowrap overflow-ellipsis  "> Guides </div> <div class="transition px-2 h-7 ml-4 min-w-[2rem] rounded-lg text-sm font-bold
+                    text-[var(--btn-content)] dark:text-[var(--deep-text)]
+                    bg-[oklch(0.95_0.025_var(--hue))] dark:bg-[var(--primary)]
+                    flex items-center justify-center"> 1 </div> </div> </button> </a> </div>  </widget-layout>   </div> </div> <!-- 响应式样式和JavaScript -->  <script>
+	import { widgetManager } from "../../utils/widget-manager";
+	
+	// 响应式布局管理
+	class SidebarManager {
+		constructor() {
+			this.init();
+		}
+		
+		init() {
+			this.updateResponsiveDisplay();
+			window.addEventListener('resize', () => this.updateResponsiveDisplay());
+			
+			// 监听SWUP内容替换事件
+			if (typeof window !== 'undefined' && window.swup) {
+				window.swup.hooks.on('content:replace', () => {
+					// 延迟执行以确保DOM已更新
+					setTimeout(() => {
+						this.updateResponsiveDisplay();
+					}, 100);
+				});
+			}
+		}
+		
+		updateResponsiveDisplay() {
+			const breakpoints = widgetManager.getBreakpoints();
+			const width = window.innerWidth;
+			
+			let deviceType;
+			if (width < breakpoints.mobile) {
+				deviceType = 'mobile';
+			} else if (width < breakpoints.tablet) {
+				deviceType = 'tablet';
+			} else {
+				deviceType = 'desktop';
+			}
+			
+			const shouldShow = widgetManager.shouldShowSidebar(deviceType);
+			const sidebar = document.getElementById('sidebar');
+			
+			if (sidebar) {
+				sidebar.style.setProperty(
+					`--sidebar-${deviceType}-display`, 
+					shouldShow ? 'block' : 'none'
+				);
+			}
+		}
+	}
+	
+	// 初始化侧边栏管理器
+	new SidebarManager();
+</script>  <div class="right-sidebar-container mb-4 col-span-1 onload-animation block row-start-3 row-end-4 lg:block lg:row-start-1 lg:row-end-2 lg:max-w-[17.5rem] lg:col-start-3 lg:col-end-4 " data-astro-cid-haiuh7kc><div id="right-sidebar" class="w-full" data-astro-cid-dnkjr6w2> <!-- 顶部固定组件区域 --> <div class="flex flex-col w-full gap-4 mb-4" data-astro-cid-dnkjr6w2> <widget-layout data-id="site-stats" data-is-collapsed="undefined" class="pb-4 card-base onload-animation hidden lg:block" style="animation-delay: 200ms; " data-astro-cid-ucso7hve="true"> <div class="font-bold transition text-lg text-neutral-900 dark:text-neutral-100 relative ml-8 mt-4 mb-2 flex items-center
+        before:w-1 before:h-4 before:rounded-md before:bg-[var(--primary)]
+        before:absolute before:left-[-16px] before:top-[5.5px]" data-astro-cid-ucso7hve style=""> Site Statistics  </div> <div id="site-stats" class="collapse-wrapper px-4 overflow-hidden" data-astro-cid-ucso7hve style="">  <div class="flex flex-col gap-2"> <div class="flex items-center justify-between px-3 py-1.5"> <div class="flex items-center gap-2.5"> <div class="text-[var(--primary)] text-xl"> <svg width="1em" height="1em" data-icon="material-symbols:article-outline">   <symbol id="ai:material-symbols:article-outline" viewBox="0 0 24 24"><path fill="currentColor" d="M7 17h7v-2H7zm0-4h10v-2H7zm0-4h10V7H7zM5 21q-.825 0-1.412-.587T3 19V5q0-.825.588-1.412T5 3h14q.825 0 1.413.588T21 5v14q0 .825-.587 1.413T19 21zm0-2h14V5H5zM5 5v14z"/></symbol><use href="#ai:material-symbols:article-outline"></use>  </svg> </div> <span class="text-neutral-700 dark:text-neutral-300 font-medium text-sm"> Posts </span> </div> <div class="flex items-center"> <span class="text-base font-bold text-neutral-900 dark:text-neutral-100"> 1 </span>  </div> </div><div class="flex items-center justify-between px-3 py-1.5"> <div class="flex items-center gap-2.5"> <div class="text-[var(--primary)] text-xl"> <svg width="1em" height="1em" data-icon="material-symbols:folder-outline">   <symbol id="ai:material-symbols:folder-outline" viewBox="0 0 24 24"><path fill="currentColor" d="M4 20q-.825 0-1.412-.587T2 18V6q0-.825.588-1.412T4 4h6l2 2h8q.825 0 1.413.588T22 8v10q0 .825-.587 1.413T20 20zm0-2h16V8h-8.825l-2-2H4zm0 0V6z"/></symbol><use href="#ai:material-symbols:folder-outline"></use>  </svg> </div> <span class="text-neutral-700 dark:text-neutral-300 font-medium text-sm"> Categories </span> </div> <div class="flex items-center"> <span class="text-base font-bold text-neutral-900 dark:text-neutral-100"> 1 </span>  </div> </div><div class="flex items-center justify-between px-3 py-1.5"> <div class="flex items-center gap-2.5"> <div class="text-[var(--primary)] text-xl"> <svg width="1em" height="1em" data-icon="material-symbols:label-outline">   <symbol id="ai:material-symbols:label-outline" viewBox="0 0 24 24"><path fill="currentColor" d="M4 20q-.825 0-1.412-.587T2 18V6q0-.825.588-1.412T4 4h11q.475 0 .9.213t.7.587L22 12l-5.4 7.2q-.275.375-.7.588T15 20zm0-2h11l4.5-6L15 6H4zm5.5-6"/></symbol><use href="#ai:material-symbols:label-outline"></use>  </svg> </div> <span class="text-neutral-700 dark:text-neutral-300 font-medium text-sm"> Tags </span> </div> <div class="flex items-center"> <span class="text-base font-bold text-neutral-900 dark:text-neutral-100"> 3 </span>  </div> </div><div class="flex items-center justify-between px-3 py-1.5"> <div class="flex items-center gap-2.5"> <div class="text-[var(--primary)] text-xl"> <svg width="1em" height="1em" data-icon="material-symbols:text-ad-outline-rounded">   <symbol id="ai:material-symbols:text-ad-outline-rounded" viewBox="0 0 24 24"><path fill="currentColor" d="M4 20q-.825 0-1.412-.587T2 18V6q0-.825.588-1.412T4 4h16q.825 0 1.413.588T22 6v12q0 .825-.587 1.413T20 20zm0-2h16V6H4zm0 0V6zm2-1h12q.425 0 .713-.288T19 16t-.288-.712T18 15H6q-.425 0-.712.288T5 16t.288.713T6 17m0-4h12q.425 0 .713-.288T19 12t-.288-.712T18 11H6q-.425 0-.712.288T5 12t.288.713T6 13m0-4h8q.425 0 .713-.288T15 8t-.288-.712T14 7H6q-.425 0-.712.288T5 8t.288.713T6 9"/></symbol><use href="#ai:material-symbols:text-ad-outline-rounded"></use>  </svg> </div> <span class="text-neutral-700 dark:text-neutral-300 font-medium text-sm"> Total Words </span> </div> <div class="flex items-center"> <span class="text-base font-bold text-neutral-900 dark:text-neutral-100"> 242 </span>  </div> </div><div class="flex items-center justify-between px-3 py-1.5"> <div class="flex items-center gap-2.5"> <div class="text-[var(--primary)] text-xl"> <svg width="1em" height="1em" data-icon="material-symbols:calendar-clock-outline">   <symbol id="ai:material-symbols:calendar-clock-outline" viewBox="0 0 24 24"><path fill="currentColor" d="M5 8h14V6H5zm0 0V6zm0 14q-.825 0-1.412-.587T3 20V6q0-.825.588-1.412T5 4h1V2h2v2h8V2h2v2h1q.825 0 1.413.588T21 6v5.675q-.475-.225-.975-.375T19 11.075V10H5v10h6.3q.175.55.413 1.05t.562.95zm13 1q-2.075 0-3.537-1.463T13 18t1.463-3.537T18 13t3.538 1.463T23 18t-1.463 3.538T18 23m1.675-2.625l.7-.7L18.5 17.8V15h-1v3.2z"/></symbol><use href="#ai:material-symbols:calendar-clock-outline"></use>  </svg> </div> <span class="text-neutral-700 dark:text-neutral-300 font-medium text-sm"> Running Time </span> </div> <div class="flex items-center"> <span class="text-base font-bold text-neutral-900 dark:text-neutral-100" data-stat-id="running-days"> 0 </span> <span class="text-sm text-neutral-500 dark:text-neutral-400 ml-1">  days </span> </div> </div><div class="flex items-center justify-between px-3 py-1.5"> <div class="flex items-center gap-2.5"> <div class="text-[var(--primary)] text-xl"> <svg width="1em" height="1em" data-icon="material-symbols:ecg-heart-outline">   <symbol id="ai:material-symbols:ecg-heart-outline" viewBox="0 0 24 24"><path fill="currentColor" d="M12 21q-.45 0-.862-.162t-.738-.488l-6.7-6.725q-.875-.875-1.287-2T2 9.275Q2 6.7 3.675 4.85T7.85 3q1.2 0 2.263.475T12 4.8q.8-.85 1.863-1.325T16.125 3q2.5 0 4.188 1.85T22 9.25q0 1.225-.425 2.35t-1.275 2l-6.725 6.75q-.325.325-.725.488T12 21m1-13q.25 0 .475.125t.35.325l1.7 2.55h4.15q.175-.425.263-.862t.087-.888q-.05-1.725-1.15-2.963t-2.75-1.237q-.775 0-1.487.3t-1.238.875l-.675.725q-.125.15-.325.238t-.4.087t-.4-.087t-.35-.238l-.675-.725q-.525-.575-1.225-.9T7.85 5Q6.2 5 5.1 6.263T4 9.25q0 .45.075.888t.25.862H9q.25 0 .475.125t.35.325l.875 1.3l1.35-4.05q.1-.3.362-.5T13 8m.3 3.25l-1.35 4.05q-.1.3-.375.5t-.6.2q-.25 0-.475-.125t-.35-.325L8.45 13H5.9l5.925 5.925q.05.05.088.063T12 19t.088-.012t.087-.063l5.9-5.925H15q-.25 0-.475-.125t-.375-.325z"/></symbol><use href="#ai:material-symbols:ecg-heart-outline"></use>  </svg> </div> <span class="text-neutral-700 dark:text-neutral-300 font-medium text-sm"> Last Activity </span> </div> <div class="flex items-center"> <span class="text-base font-bold text-neutral-900 dark:text-neutral-100" data-stat-id="last-update"> 0 </span> <span class="text-sm text-neutral-500 dark:text-neutral-400 ml-1">  days ago </span> </div> </div> </div>  </div>  </widget-layout>   <script>(function(){const siteStartDate = "2026-01-01";
+const lastPostDate = "2024-04-01T00:00:00.000Z";
+
+  function updateDynamicStats() {
+    const today = new Date();
+    
+    // 更新运行天数
+    const startDate = new Date(siteStartDate);
+    const diffTime = Math.abs(today.getTime() - startDate.getTime());
+    const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+    
+    const runningDaysElement = document.querySelector('[data-stat-id="running-days"]');
+    if (runningDaysElement) {
+      runningDaysElement.textContent = diffDays.toString();
+    }
+    
+    // 更新最后活动时间
+    if (lastPostDate) {
+      const lastPost = new Date(lastPostDate);
+      const timeSinceLastPost = Math.abs(today.getTime() - lastPost.getTime());
+      const daysSinceLastUpdate = Math.floor(timeSinceLastPost / (1000 * 60 * 60 * 24));
+      
+      const lastUpdateElement = document.querySelector('[data-stat-id="last-update"]');
+      if (lastUpdateElement) {
+        lastUpdateElement.textContent = daysSinceLastUpdate.toString();
+      }
+    }
+  }
+  
+  // 页面加载时更新
+  updateDynamicStats();
+  
+  // 每小时更新一次（可选，因为天数变化较慢）
+  setInterval(updateDynamicStats, 60 * 60 * 1000);
+})();</script><widget-layout data-id="calendar-widget" data-is-collapsed="undefined" class="pb-4 card-base hidden md:block onload-animation hidden lg:block" style="animation-delay: 250ms; " data-astro-cid-ucso7hve="true">  <div id="calendar-widget" class="collapse-wrapper px-4 overflow-hidden" data-astro-cid-ucso7hve style="">  <div class="flex justify-between items-center mb-2 mt-2" data-astro-cid-o3b4delr> <div class="font-bold transition text-lg text-neutral-900 dark:text-neutral-100 relative ml-4 flex items-center
+					before:w-1 before:h-4 before:rounded-md before:bg-[var(--primary)]
+					before:absolute before:left-[-16px] before:top-[13.5px]" data-astro-cid-o3b4delr> <div id="calendar-title-container" class="flex justify-center items-center cursor-pointer hover:bg-[var(--btn-plain-bg-hover)] px-2 py-2 -ml-2 rounded-lg transition-colors" data-astro-cid-o3b4delr> <span id="calendar-title" class="text-lg font-bold text-neutral-900 dark:text-neutral-100 select-none" data-astro-cid-o3b4delr></span> </div> </div> <div class="flex items-center gap-1 shrink-0 ml-2" data-astro-cid-o3b4delr> <button id="back-to-today-btn" class="p-1.5 rounded-md hover:bg-[var(--btn-plain-bg-hover)] text-[var(--primary)] transition-all invisible" aria-label="Back to today" data-astro-cid-o3b4delr> <svg width="1em" height="1em" class="text-xl" data-astro-cid-o3b4delr="true" data-icon="material-symbols:restart-alt-rounded">   <symbol id="ai:material-symbols:restart-alt-rounded" viewBox="0 0 24 24"><path fill="currentColor" d="M9.825 20.7q-2.575-.725-4.2-2.837T4 13q0-1.425.475-2.713t1.35-2.362q.275-.3.675-.313t.725.313q.275.275.288.675t-.263.75q-.6.775-.925 1.7T6 13q0 2.025 1.188 3.613t3.062 2.162q.325.1.538.375t.212.6q0 .5-.35.788t-.825.162m4.35 0q-.475.125-.825-.175t-.35-.8q0-.3.213-.575t.537-.375q1.875-.6 3.063-2.175T18 13q0-2.5-1.75-4.25T12 7h-.075l.4.4q.275.275.275.7t-.275.7t-.7.275t-.7-.275l-2.1-2.1q-.15-.15-.212-.325T8.55 6t.063-.375t.212-.325l2.1-2.1q.275-.275.7-.275t.7.275t.275.7t-.275.7l-.4.4H12q3.35 0 5.675 2.325T20 13q0 2.725-1.625 4.85t-4.2 2.85"/></symbol><use href="#ai:material-symbols:restart-alt-rounded"></use>  </svg> </button> <button id="prev-month-btn" class="p-1.5 rounded-md hover:bg-[var(--btn-plain-bg-hover)] text-neutral-600 dark:text-neutral-400 hover:text-[var(--primary)] transition-colors text-xl font-extrabold" aria-label="Previous month" data-astro-cid-o3b4delr>
+＜
+</button> <button id="next-month-btn" class="p-1.5 rounded-md hover:bg-[var(--btn-plain-bg-hover)] text-neutral-600 dark:text-neutral-400 hover:text-[var(--primary)] transition-colors text-xl font-extrabold" aria-label="Next month" data-astro-cid-o3b4delr>
+＞
+</button> </div> </div> <div class="relative w-full overflow-hidden" style="min-height: 250px;" data-astro-cid-o3b4delr> <div id="calendar-view" class="w-full opacity-100" data-astro-cid-o3b4delr> <div class="grid grid-cols-7 gap-1 mb-2" data-astro-cid-o3b4delr> <div class="text-center text-xs text-neutral-500 dark:text-neutral-400 font-medium py-1" data-astro-cid-o3b4delr> Mon </div><div class="text-center text-xs text-neutral-500 dark:text-neutral-400 font-medium py-1" data-astro-cid-o3b4delr> Tue </div><div class="text-center text-xs text-neutral-500 dark:text-neutral-400 font-medium py-1" data-astro-cid-o3b4delr> Wed </div><div class="text-center text-xs text-neutral-500 dark:text-neutral-400 font-medium py-1" data-astro-cid-o3b4delr> Thu </div><div class="text-center text-xs text-neutral-500 dark:text-neutral-400 font-medium py-1" data-astro-cid-o3b4delr> Fri </div><div class="text-center text-xs text-neutral-500 dark:text-neutral-400 font-medium py-1" data-astro-cid-o3b4delr> Sat </div><div class="text-center text-xs text-neutral-500 dark:text-neutral-400 font-medium py-1" data-astro-cid-o3b4delr> Sun </div> </div> <div id="calendar-grid" class="grid grid-cols-7 gap-1" data-astro-cid-o3b4delr></div> <div id="calendar-posts" class="mt-4" data-astro-cid-o3b4delr> <div class="h-[1px] w-full bg-neutral-200 dark:bg-neutral-700 mb-2 hidden" id="calendar-posts-divider" data-astro-cid-o3b4delr></div> <div class="flex flex-col gap-1 max-h-[150px] overflow-y-auto custom-scrollbar" id="calendar-posts-list" data-astro-cid-o3b4delr></div> </div> </div> <div id="selection-panel" class="absolute inset-0 bg-[var(--card-bg)] z-10 flex flex-col hidden opacity-0 transition-opacity duration-200" data-astro-cid-o3b4delr> <div id="selection-content" class="w-full h-full overflow-y-auto custom-scrollbar p-2 grid gap-2 content-start" data-astro-cid-o3b4delr></div> </div> </div>  </div>  </widget-layout>   <script>(function(){const monthNames = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+const yearSuffix = " ";
+
+	let allPostsData = [];
+	const postDateMap = {};
+	const postsByMonth = {};
+	const stats = {
+		hasPostInYear: {},
+		hasPostInMonth: {},
+		minYear: new Date().getFullYear(),
+		maxYear: new Date().getFullYear() + 5,
+	};
+
+	async function fetchCalendarData() {
+		try {
+			const res = await fetch("/api/calendar-data.json");
+			const data = await res.json();
+			if (Array.isArray(data)) {
+				allPostsData = data;
+				processPostsData(allPostsData);
+				const currentPostId = getCurrentPostId();
+				if (currentPostId) {
+					const matchedPost = allPostsData.find(
+						(p) => p.id === currentPostId,
+					);
+					if (matchedPost) {
+						const [y, m] = matchedPost.date.split("-");
+						currentYear = parseInt(y);
+						currentMonth = parseInt(m) - 1;
+					}
+				}
+				renderCalendar();
+			}
+		} catch (error) {
+			console.error("Failed to fetch calendar data:", error);
+		}
+	}
+
+	function processPostsData(posts) {
+		if (!posts || posts.length === 0) return;
+		posts.forEach((post) => {
+			const [yStr, mStr] = post.date.split("-");
+			const year = parseInt(yStr);
+			const month = parseInt(mStr); // 1-12
+			stats.hasPostInYear[year] = true;
+			stats.hasPostInMonth[`${year}-${month}`] = true;
+
+			if (year < stats.minYear) stats.minYear = year;
+
+			const dateKey = post.date;
+			const monthKey = `${year}-${month - 1}`; // JS Month is 0-11
+
+			if (!postDateMap[dateKey]) postDateMap[dateKey] = [];
+			postDateMap[dateKey].push(post);
+
+			if (!postsByMonth[monthKey]) postsByMonth[monthKey] = [];
+			postsByMonth[monthKey].push(post);
+		});
+	}
+
+	const now = new Date();
+	const todayYear = now.getFullYear();
+	const todayMonth = now.getMonth();
+	const todayDate = now.getDate();
+
+	let currentYear = todayYear;
+	let currentMonth = todayMonth;
+	let selectedDateKey = null;
+	let currentView = "day";
+
+	const dom = {
+		titleContainer: document.getElementById("calendar-title-container"),
+		title: document.getElementById("calendar-title"),
+		prevBtn: document.getElementById("prev-month-btn"),
+		nextBtn: document.getElementById("next-month-btn"),
+		backTodayBtn: document.getElementById("back-to-today-btn"),
+		calendarView: document.getElementById("calendar-view"),
+		selectionPanel: document.getElementById("selection-panel"),
+		selectionContent: document.getElementById("selection-content"),
+		grid: document.getElementById("calendar-grid"),
+		postsList: document.getElementById("calendar-posts-list"),
+		divider: document.getElementById("calendar-posts-divider"),
+	};
+
+	function getCurrentPostId() {
+		const path = window.location.pathname;
+		if (!allPostsData || allPostsData.length === 0) return null;
+		const decodedPath = decodeURIComponent(path);
+		const normalizedPath = decodedPath.endsWith("/")
+			? decodedPath.slice(0, -1)
+			: decodedPath;
+
+		const matchedPost = allPostsData.find((post) => {
+			return normalizedPath.endsWith(`/${post.id}`);
+		});
+		return matchedPost ? matchedPost.id : null;
+	}
+
+	function init() {
+		renderCalendar();
+		setupEventListeners();
+		fetchCalendarData();
+	}
+
+	function setupEventListeners() {
+		dom.titleContainer.addEventListener("click", (e) => {
+			e.stopPropagation();
+			if (currentView === "day") showMonthPicker();
+			else if (currentView === "month") showYearPicker();
+			else closeSelectionPanel();
+		});
+
+		dom.prevBtn.addEventListener("click", () => {
+			currentMonth--;
+			if (currentMonth < 0) {
+				currentMonth = 11;
+				currentYear--;
+			}
+			renderCalendar();
+		});
+
+		dom.nextBtn.addEventListener("click", () => {
+			currentMonth++;
+			if (currentMonth > 11) {
+				currentMonth = 0;
+				currentYear++;
+			}
+			renderCalendar();
+		});
+
+		dom.backTodayBtn.addEventListener("click", () => {
+			currentYear = todayYear;
+			currentMonth = todayMonth;
+			selectedDateKey = null;
+			if (currentView !== "day") closeSelectionPanel();
+			else renderCalendar();
+		});
+
+		dom.grid.addEventListener("click", (e) => {
+			const cell = e.target.closest(".calendar-day");
+			if (!cell) return;
+			const dateKey = cell.getAttribute("data-date");
+
+			if (selectedDateKey === dateKey) selectedDateKey = null;
+			else selectedDateKey = dateKey;
+
+			renderCalendar();
+			if (selectedDateKey && postDateMap[selectedDateKey]) {
+				renderPostList(postDateMap[selectedDateKey]);
+			} else {
+				showMonthlyPosts();
+			}
+		});
+
+		dom.selectionContent.addEventListener("click", (e) => {
+			const monthItem = e.target.closest(".month-item");
+			const yearItem = e.target.closest(".year-item");
+
+			if (monthItem) {
+				e.stopPropagation();
+				currentMonth = parseInt(monthItem.getAttribute("data-month"));
+				closeSelectionPanel();
+			} else if (yearItem) {
+				e.stopPropagation();
+				currentYear = parseInt(yearItem.getAttribute("data-year"));
+				showMonthPicker();
+			}
+		});
+
+		document.addEventListener("click", (e) => {
+			if (currentView === "day") return;
+			const widget = document.getElementById("calendar-widget");
+			if (widget && !widget.contains(e.target)) {
+				closeSelectionPanel();
+			}
+		});
+	}
+
+	function updateHeader() {
+		dom.title.textContent = `${currentYear}${yearSuffix} ${monthNames[currentMonth]}`;
+		const isCurrentRealMonth =
+			currentYear === todayYear && currentMonth === todayMonth;
+		const shouldShowReset = !isCurrentRealMonth || selectedDateKey !== null;
+
+		if (shouldShowReset) dom.backTodayBtn.classList.remove("invisible");
+		else dom.backTodayBtn.classList.add("invisible");
+
+		const isDayView = currentView === "day";
+		dom.prevBtn.style.visibility = isDayView ? "visible" : "hidden";
+		dom.nextBtn.style.visibility = isDayView ? "visible" : "hidden";
+	}
+
+	function renderCalendar() {
+		updateHeader();
+		const firstDayOfMonth =
+			(new Date(currentYear, currentMonth, 1).getDay() + 6) % 7;
+		const daysInMonth = new Date(
+			currentYear,
+			currentMonth + 1,
+			0,
+		).getDate();
+
+		let html = "";
+		if (firstDayOfMonth > 0) {
+			html += `<div class="aspect-square"></div>`.repeat(firstDayOfMonth);
+		}
+
+		for (let day = 1; day <= daysInMonth; day++) {
+			const dateKey = `${currentYear}-${String(currentMonth + 1).padStart(2, "0")}-${String(day).padStart(2, "0")}`;
+			const posts = postDateMap[dateKey] || [];
+			const hasPost = posts.length > 0;
+			const count = posts.length;
+			const isToday =
+				currentYear === todayYear &&
+				currentMonth === todayMonth &&
+				day === todayDate;
+			const isSelected = selectedDateKey === dateKey;
+
+			let bgClass =
+				"hover:bg-[var(--btn-plain-bg-hover)] text-neutral-700 dark:text-neutral-300 border border-transparent";
+
+			if (isSelected) {
+				bgClass =
+					"bg-[var(--primary)] text-white shadow-md border border-transparent";
+			} else if (isToday) {
+				bgClass =
+					"text-[var(--primary)] font-bold bg-[var(--primary)]/10 border border-[var(--primary)]";
+			} else if (hasPost) {
+				bgClass =
+					"font-bold text-neutral-900 dark:text-neutral-100 hover:bg-[var(--btn-plain-bg-hover)] border border-transparent";
+			}
+
+			html += `
+                <div class="calendar-day aspect-square flex items-center justify-center rounded-md cursor-pointer relative transition-all duration-200 ${bgClass}"
+                    data-date="${dateKey}">
+                    ${day}
+                    ${hasPost && !isSelected ? `<span class="absolute bottom-1 w-1 h-1 rounded-full bg-[var(--primary)]"></span>` : ""}
+                    ${hasPost && count > 1 ? `<span class="absolute top-0.5 right-0.5 text-[9px] opacity-70 scale-75">${count}</span>` : ""}
+                </div>
+            `;
+		}
+
+		dom.grid.innerHTML = html;
+		if (selectedDateKey && postDateMap[selectedDateKey]) {
+			renderPostList(postDateMap[selectedDateKey]);
+		} else {
+			showMonthlyPosts();
+		}
+	}
+
+	function showMonthlyPosts() {
+		const key = `${currentYear}-${currentMonth}`; // Month is 0-11
+		const posts = postsByMonth[key] || [];
+		renderPostList(posts);
+	}
+
+	function renderPostList(posts) {
+		if (!dom.postsList) return;
+		if (posts.length === 0) {
+			dom.divider.classList.add("hidden");
+			dom.postsList.innerHTML = "";
+			return;
+		}
+
+		dom.divider.classList.remove("hidden");
+		const currentPostId = getCurrentPostId();
+
+		const listHtml = posts
+			.map((post) => {
+				const [, m, d] = post.date.split("-");
+				const dateStr = `${parseInt(m)}-${parseInt(d)}`;
+
+				const isCurrentPost = post.id === currentPostId;
+				let containerClass =
+					"flex items-center justify-between text-sm transition-colors px-2 py-2 rounded-lg group border border-transparent";
+				let titleClass = "truncate flex-1 font-bold transition-colors";
+				let dateClass =
+					"text-xs ml-2 whitespace-nowrap transition-colors";
+
+				if (isCurrentPost) {
+					containerClass +=
+						" bg-[var(--primary)]/10 text-[var(--primary)] border-[var(--primary)]/10";
+					dateClass += " text-[var(--primary)]/80";
+				} else {
+					containerClass +=
+						" text-neutral-700 dark:text-neutral-300 hover:text-[var(--primary)] dark:hover:text-[var(--primary)] hover:bg-[var(--btn-plain-bg-hover)]";
+					dateClass +=
+						" text-neutral-400 group-hover:text-[var(--primary)]/70";
+				}
+
+				return `
+            <a href="/posts/${post.id}/" class="${containerClass}">
+                <span class="${titleClass}">${post.title}</span>
+                <span class="${dateClass}">${dateStr}</span>
+            </a>
+        `;
+			})
+			.join("");
+
+		dom.postsList.innerHTML = listHtml;
+	}
+
+	function showMonthPicker() {
+		currentView = "month";
+		updateHeader();
+		dom.selectionPanel.classList.remove("hidden");
+		requestAnimationFrame(() => {
+			dom.selectionPanel.classList.remove("opacity-0");
+		});
+
+		dom.selectionContent.className =
+			"w-full h-full p-4 grid grid-cols-3 gap-3 content-center";
+
+		let html = "";
+		monthNames.forEach((name, index) => {
+			const isCurrentMonth = index === currentMonth;
+			const hasPost = stats.hasPostInMonth[`${currentYear}-${index + 1}`];
+			let cls =
+				"month-item cursor-pointer rounded-lg flex flex-col items-center justify-center p-2 transition-all hover:bg-[var(--btn-plain-bg-hover)] relative border border-transparent";
+			if (isCurrentMonth)
+				cls +=
+					" border-[var(--primary)] text-[var(--primary)] bg-[var(--primary)]/5";
+			else cls += " text-neutral-700 dark:text-neutral-300";
+
+			html += `
+                <div class="${cls}" data-month="${index}">
+                    <span class="text-sm font-bold">${name}</span>
+                    ${hasPost ? `<span class="w-1 h-1 rounded-full bg-[var(--primary)] mt-1"></span>` : `<span class="w-1 h-1 mt-1"></span>`}
+                </div>
+             `;
+		});
+		dom.selectionContent.innerHTML = html;
+	}
+
+	function showYearPicker() {
+		currentView = "year";
+		updateHeader();
+		dom.selectionContent.className =
+			"w-full h-full p-2 grid grid-cols-4 gap-2 content-start overflow-y-auto";
+
+		let html = "";
+		for (let y = stats.minYear; y <= stats.maxYear; y++) {
+			const isCurrent = y === currentYear;
+			const hasPost = stats.hasPostInYear[y];
+			let cls =
+				"year-item cursor-pointer rounded-lg flex flex-col items-center justify-center py-3 transition-all hover:bg-[var(--btn-plain-bg-hover)] relative border border-transparent";
+			if (isCurrent)
+				cls +=
+					" border-[var(--primary)] text-[var(--primary)] bg-[var(--primary)]/5";
+			else cls += " text-neutral-700 dark:text-neutral-300";
+
+			html += `
+                <div class="${cls}" data-year="${y}" id="year-${y}">
+                    <span class="text-sm font-bold">${y}</span>
+                     ${hasPost ? `<span class="w-1.5 h-1.5 rounded-full bg-[var(--primary)] mt-1"></span>` : `<span class="w-1.5 h-1.5 mt-1"></span>`}
+                </div>
+            `;
+		}
+		dom.selectionContent.innerHTML = html;
+
+		setTimeout(() => {
+			const el = document.getElementById(`year-${currentYear}`);
+			if (el) el.scrollIntoView({ block: "center", behavior: "smooth" });
+		}, 50);
+	}
+
+	function closeSelectionPanel() {
+		dom.selectionPanel.classList.add("opacity-0");
+		setTimeout(() => {
+			dom.selectionPanel.classList.add("hidden");
+			currentView = "day";
+			renderCalendar();
+		}, 200);
+	}
+
+	init();
+})();</script>  </div> <!-- 粘性组件区域 -->  </div> <!-- 响应式样式和JavaScript -->  <script type="module" src="/_astro/RightSideBar.astro_astro_type_script_index_0_lang.Bbb9Hryr.js"></script></div> <main id="swup-container" class="transition-swup-fade overflow-hidden w-full col-span-1 row-start-1 row-end-2 col-span-1 row-start-1 row-end-2 lg:col-start-2 lg:col-end-3 lg:col-start-2 lg:col-end-3 transition-main" data-astro-cid-haiuh7kc> <div id="content-wrapper" class="onload-animation transition-leaving" data-astro-cid-haiuh7kc> <!-- the overflow-hidden here prevent long text break the layout--> <!-- make id different from windows.swup global property -->   <script type="module" src="/_astro/devices.astro_astro_type_script_index_0_lang.dvY850Ym.js"></script> <div class="flex w-full rounded-[var(--radius-large)] overflow-hidden relative min-h-32" data-astro-cid-komnyuwm> <div class="card-base z-10 px-9 py-6 relative w-full" data-astro-cid-komnyuwm> <!-- 页面标题 --> <div class="flex flex-col items-start justify-center mb-8" data-astro-cid-komnyuwm> <h1 class="text-4xl font-bold text-black/90 dark:text-white/90 mb-2 relative
+                  before:w-1 before:h-8 before:rounded-md before:bg-[var(--primary)]
+                  before:absolute before:top-1/2 before:-translate-y-1/2 before:-left-4" data-astro-cid-komnyuwm> My Devices </h1> <p class="text-lg text-black/60 dark:text-white/60" data-astro-cid-komnyuwm> Here are the devices I use in my daily life </p> </div> <!-- 过滤按钮 --> <div class="mb-6" data-astro-cid-komnyuwm> <div class="filter-container flex flex-wrap gap-2" data-astro-cid-komnyuwm> <button data-brand="OnePlus" class="filter-tag px-6 py-2.5 rounded-lg font-medium transition-all active" data-astro-cid-komnyuwm> OnePlus </button><button data-brand="Router" class="filter-tag px-6 py-2.5 rounded-lg font-medium transition-all " data-astro-cid-komnyuwm> Router </button> </div> </div> <!-- 设备列表 --> <div id="devices-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" data-astro-cid-komnyuwm> <a href="https://www.oneplus.com/cn/13t" target="_blank" rel="noopener noreferrer" class="device-card group relative overflow-hidden rounded-xl border border-[var(--line-divider)] bg-[var(--card-bg)] transition-all duration-300 hover:border-[var(--primary)]/50 hover:shadow-md hover:shadow-black/5 dark:hover:shadow-white/5 hover:scale-[1.02] hover:-translate-y-0.5 block cursor-pointer" style="animation-delay: 0ms" data-astro-cid-komnyuwm> <!-- 设备图片区域 --> <div class="relative p-6 pb-0" data-astro-cid-komnyuwm> <div class="flex justify-center items-center h-48 bg-gradient-to-br from-[var(--card-bg)] to-[var(--btn-regular-bg)] rounded-lg overflow-hidden relative" data-astro-cid-komnyuwm> <div class="absolute inset-0 bg-[var(--primary)]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" data-astro-cid-komnyuwm></div> <img src="/images/device/oneplus13t.png" alt="OnePlus 13T" class="w-auto h-full max-h-full object-contain group-hover:scale-110 transition-all duration-500 drop-shadow-md relative z-10" data-astro-cid-komnyuwm> </div> </div> <!-- 设备信息区域 --> <div class="p-6 pt-4 relative z-10" data-astro-cid-komnyuwm> <div class="flex items-start justify-between mb-3" data-astro-cid-komnyuwm> <h3 class="text-lg font-bold text-black/90 dark:text-white/90 group-hover:text-[var(--primary)] transition-colors duration-300" data-astro-cid-komnyuwm> OnePlus 13T </h3> <div class="p-1.5 rounded-full bg-[var(--primary)]/10 text-[var(--primary)] opacity-0 group-hover:opacity-100 transition-opacity duration-300" data-astro-cid-komnyuwm> <svg width="1em" height="1em" class="text-lg" data-astro-cid-komnyuwm="true" data-icon="material-symbols:open-in-new">   <symbol id="ai:material-symbols:open-in-new" viewBox="0 0 24 24"><path fill="currentColor" d="M5 21q-.825 0-1.412-.587T3 19V5q0-.825.588-1.412T5 3h7v2H5v14h14v-7h2v7q0 .825-.587 1.413T19 21zm4.7-5.3l-1.4-1.4L17.6 5H14V3h7v7h-2V6.4z"/></symbol><use href="#ai:material-symbols:open-in-new"></use>  </svg> </div> </div> <div class="mb-4" data-astro-cid-komnyuwm> <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[var(--btn-regular-bg)] text-black/70 dark:text-white/70 text-sm mb-3" data-astro-cid-komnyuwm> <svg width="1em" height="1em" class="text-sm" data-astro-cid-komnyuwm="true" data-icon="material-symbols:settings-suggest-outline">   <symbol id="ai:material-symbols:settings-suggest-outline" viewBox="0 0 24 24"><path fill="currentColor" d="m18.525 9l-1.1-2.4l-2.4-1.1l2.4-1.1l1.1-2.4l1.1 2.4l2.4 1.1l-2.4 1.1l-1.1 2.4Zm2 7l-.8-1.7l-1.7-.8l1.7-.8l.8-1.7l.8 1.7l1.7.8l-1.7.8l-.8 1.7Zm-13 6l-.3-2.35q-.2-.075-.387-.2t-.313-.25l-2.2.95L1.85 15.8l1.875-1.4v-.8L1.85 12.2l2.475-4.35l2.2.95q.125-.125.313-.25t.387-.2l.3-2.35h5l.3 2.35q.2.075.388.2t.312.25l2.2-.95L18.2 12.2l-1.875 1.4v.8l1.875 1.4l-2.475 4.35l-2.2-.95q-.125.125-.312.25t-.388.2l-.3 2.35h-5Zm2.5-5q1.25 0 2.125-.875T13.025 14q0-1.25-.875-2.125T10.025 11q-1.25 0-2.125.875T7.025 14q0 1.25.875 2.125t2.125.875Zm0-2q-.425 0-.713-.288T9.025 14q0-.425.288-.713t.712-.287q.425 0 .713.288t.287.712q0 .425-.288.713t-.712.287Zm-.75 5h1.5l.2-1.8q.725-.2 1.238-.513t1.012-.837l1.65.75l.7-1.25l-1.45-1.1q.2-.575.2-1.25t-.2-1.25l1.45-1.1l-.7-1.25l-1.65.75q-.5-.525-1.012-.837T10.975 9.8l-.2-1.8h-1.5l-.2 1.8q-.725.2-1.237.513t-1.013.837l-1.65-.75l-.7 1.25l1.45 1.1q-.2.575-.213 1.25t.213 1.25l-1.45 1.1l.7 1.25l1.65-.75q.5.525 1.012.838t1.238.512l.2 1.8Zm.75-6Z"/></symbol><use href="#ai:material-symbols:settings-suggest-outline"></use>  </svg> <span class="font-medium" data-astro-cid-komnyuwm>Gray / 16G + 1TB</span> </div> <p class="text-sm text-black/60 dark:text-white/60 leading-relaxed line-clamp-2" data-astro-cid-komnyuwm> Flagship performance, Hasselblad imaging, 80W SuperVOOC. </p> </div> <!-- 查看详情按钮 --> <div class="flex items-center justify-between pt-3 border-t border-[var(--line-divider)] border-dashed opacity-0 group-hover:opacity-100 transition-all duration-300" data-astro-cid-komnyuwm> <span class="text-sm font-medium text-[var(--primary)]" data-astro-cid-komnyuwm>查看详情</span> <svg width="1em" height="1em" class="text-lg text-[var(--primary)]" data-astro-cid-komnyuwm="true" data-icon="material-symbols:arrow-forward-rounded">   <symbol id="ai:material-symbols:arrow-forward-rounded" viewBox="0 0 24 24"><path fill="currentColor" d="M16.175 13H5q-.425 0-.712-.288T4 12t.288-.712T5 11h11.175l-4.9-4.9q-.3-.3-.288-.7t.313-.7q.3-.275.7-.288t.7.288l6.6 6.6q.15.15.213.325t.062.375t-.062.375t-.213.325l-6.6 6.6q-.275.275-.687.275T11.3 19.3q-.3-.3-.3-.712t.3-.713z"/></symbol><use href="#ai:material-symbols:arrow-forward-rounded"></use>  </svg> </div> </div> </a> </div> </div> </div> <script>(function(){const devices = {"OnePlus":[{"name":"OnePlus 13T","image":"/images/device/oneplus13t.png","specs":"Gray / 16G + 1TB","description":"Flagship performance, Hasselblad imaging, 80W SuperVOOC.","link":"https://www.oneplus.com/cn/13t"}],"Router":[{"name":"GL-MT3000","image":"/images/device/mt3000.png","specs":"1000Mbps / 2.5G","description":"Portable WiFi 6 router suitable for business trips and home use.","link":"https://www.gl-inet.cn/products/gl-mt3000/"}]};
+
+    const brandTabs = document.querySelectorAll('.filter-tag');
+    const devicesContainer = document.getElementById('devices-container');
+
+    brandTabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        const brand = tab.dataset.brand;
+        
+        // 移除所有激活状态
+        brandTabs.forEach(t => {
+          t.classList.remove('active');
+        });
+        // 激活当前点击的标签
+        tab.classList.add('active');
+
+        const brandDevices = devices[brand] || [];
+        devicesContainer.innerHTML = brandDevices.map((device, index) => `
+          <a 
+            href="${device.link}"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="device-card group relative overflow-hidden rounded-xl border border-[var(--line-divider)] bg-[var(--card-bg)] transition-all duration-300 hover:border-[var(--primary)]/50 hover:shadow-md hover:shadow-black/5 dark:hover:shadow-white/5 hover:scale-[1.02] hover:-translate-y-0.5 block cursor-pointer"
+            style="animation-delay: ${index * 100}ms; animation: fadeInUp 0.6s cubic-bezier(0.25, 0.1, 0.25, 1) forwards; opacity: 0;"
+          >
+            <!-- 设备图片区域 -->
+            <div class="relative p-6 pb-0">
+              <div class="flex justify-center items-center h-48 bg-gradient-to-br from-[var(--card-bg)] to-[var(--btn-regular-bg)] rounded-lg overflow-hidden relative">
+                <div class="absolute inset-0 bg-[var(--primary)]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <img 
+                  src="${device.image}" 
+                  alt="${device.name}"
+                  class="w-auto h-full max-h-full object-contain group-hover:scale-110 transition-all duration-500 drop-shadow-md relative z-10"
+                />
+              </div>
+            </div>
+            
+            <!-- 设备信息区域 -->
+            <div class="p-6 pt-4 relative z-10">
+              <div class="flex items-start justify-between mb-3">
+                <h3 class="text-lg font-bold text-black/90 dark:text-white/90 group-hover:text-[var(--primary)] transition-colors duration-300">
+                  ${device.name}
+                </h3>
+                <div class="p-1.5 rounded-full bg-[var(--primary)]/10 text-[var(--primary)] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </div>
+              </div>
+              
+              <div class="mb-4">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[var(--btn-regular-bg)] text-black/70 dark:text-white/70 text-sm mb-3">
+                  <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
+                  <span class="font-medium">${device.specs}</span>
+                </div>
+                
+                <p class="text-sm text-black/60 dark:text-white/60 leading-relaxed line-clamp-2">
+                  ${device.description}
+                </p>
+              </div>
+              
+              <!-- 查看详情按钮 -->
+              <div class="flex items-center justify-between pt-3 border-t border-[var(--line-divider)] border-dashed opacity-0 group-hover:opacity-100 transition-all duration-300">
+                <span class="text-sm font-medium text-[var(--primary)]">查看详情</span>
+                <svg class="w-5 h-5 text-[var(--primary)]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                </svg>
+              </div>
+            </div>
+            
+
+          </a>
+        `).join('');
+      });
+    });
+  })();</script>   <div class="footer col-span-2 onload-animation hidden lg:block" data-astro-cid-haiuh7kc> <!--<div class="border-t border-[var(&#45;&#45;primary)] mx-16 border-dashed py-8 max-w-[var(&#45;&#45;page-width)] flex flex-col items-center justify-center px-6">--><div class="transition border-t border-black/10 dark:border-white/15 my-10 border-dashed mx-32"></div> <!--<div class="transition bg-[oklch(92%_0.01_var(&#45;&#45;hue))] dark:bg-black rounded-2xl py-8 mt-4 mb-8 flex flex-col items-center justify-center px-6">--> <div class="transition border-dashed border-[oklch(85%_0.01_var(--hue))] dark:border-white/15 rounded-2xl mb-12 flex flex-col items-center justify-center px-6"> <div class="transition text-50 text-sm text-center"> 
+&copy; <span id="copyright-year">2026</span> 翎. All Rights Reserved. /
+<a class="transition link text-[var(--primary)] font-medium" href="/rss/" onclick="event.preventDefault(); navigateToPage('/rss/')">RSS</a> /
+<a class="transition link text-[var(--primary)] font-medium" href="/atom/" onclick="event.preventDefault(); navigateToPage('/atom/')">Atom</a> /
+<a class="transition link text-[var(--primary)] font-medium" target="_blank" href="/sitemap-index.xml">Sitemap</a><br>
+Powered by
+<a class="transition link text-[var(--primary)] font-medium" target="_blank" href="https://astro.build">Astro</a> &
+<a class="transition link text-[var(--primary)] font-medium" target="_blank" href="https://github.com/matsuzaka-yuki/mizuki">Mizuki</a>&nbsp; Version <a class="transition link text-[var(--primary)] font-medium" target="_blank" href="https://github.com/matsuzaka-yuki/mizuki">7.6.5</a><br> </div> </div> </div> </div> </main> <div class="footer col-span-2 onload-animation block lg:hidden" data-astro-cid-haiuh7kc> <!--<div class="border-t border-[var(&#45;&#45;primary)] mx-16 border-dashed py-8 max-w-[var(&#45;&#45;page-width)] flex flex-col items-center justify-center px-6">--><div class="transition border-t border-black/10 dark:border-white/15 my-10 border-dashed mx-32"></div> <!--<div class="transition bg-[oklch(92%_0.01_var(&#45;&#45;hue))] dark:bg-black rounded-2xl py-8 mt-4 mb-8 flex flex-col items-center justify-center px-6">--> <div class="transition border-dashed border-[oklch(85%_0.01_var(--hue))] dark:border-white/15 rounded-2xl mb-12 flex flex-col items-center justify-center px-6"> <div class="transition text-50 text-sm text-center"> 
+&copy; <span id="copyright-year">2026</span> 翎. All Rights Reserved. /
+<a class="transition link text-[var(--primary)] font-medium" href="/rss/" onclick="event.preventDefault(); navigateToPage('/rss/')">RSS</a> /
+<a class="transition link text-[var(--primary)] font-medium" href="/atom/" onclick="event.preventDefault(); navigateToPage('/atom/')">Atom</a> /
+<a class="transition link text-[var(--primary)] font-medium" target="_blank" href="/sitemap-index.xml">Sitemap</a><br>
+Powered by
+<a class="transition link text-[var(--primary)] font-medium" target="_blank" href="https://astro.build">Astro</a> &
+<a class="transition link text-[var(--primary)] font-medium" target="_blank" href="https://github.com/matsuzaka-yuki/mizuki">Mizuki</a>&nbsp; Version <a class="transition link text-[var(--primary)] font-medium" target="_blank" href="https://github.com/matsuzaka-yuki/mizuki">7.6.5</a><br> </div> </div> </div> </div> <!-- There can't be a filter on parent element, or it will break `fixed` --><div class="back-to-top-wrapper block" data-astro-cid-eymb5ayk> <div id="back-to-top-btn" class="back-to-top-btn hide flex items-center rounded-2xl overflow-hidden transition" onclick="backToTop()" data-astro-cid-eymb5ayk> <button aria-label="Back to Top" class="btn-card h-[3.75rem] w-[3.75rem]" data-astro-cid-eymb5ayk> <svg width="1em" height="1em" class="mx-auto" data-astro-cid-eymb5ayk="true" data-icon="material-symbols:keyboard-arrow-up-rounded">   <symbol id="ai:material-symbols:keyboard-arrow-up-rounded" viewBox="0 0 24 24"><path fill="currentColor" d="m12 10.8l-3.9 3.9q-.275.275-.7.275t-.7-.275t-.275-.7t.275-.7l4.6-4.6q.3-.3.7-.3t.7.3l4.6 4.6q.275.275.275.7t-.275.7t-.7.275t-.7-.275z"/></symbol><use href="#ai:material-symbols:keyboard-arrow-up-rounded"></use>  </svg> </button> </div> </div>  <script>
+    function backToTop() {
+        // 直接使用原生滚动，避免OverlayScrollbars冲突
+        window.scroll({top: 0, behavior: 'smooth'});
+    }
+</script>  </div> </div>  <div class="absolute w-full z-0 hidden 2xl:block" data-astro-cid-haiuh7kc> <div class="relative max-w-[var(--page-width)] mx-auto" data-astro-cid-haiuh7kc> <div id="toc-wrapper" class="hidden lg:block transition absolute top-0 w-[var(--toc-width)] items-center -right-[var(--toc-width)] toc-hide" data-astro-cid-haiuh7kc> <div id="toc-inner-wrapper" class="fixed top-14 w-[var(--toc-width)] h-[calc(100vh_-_20rem)] overflow-y-scroll overflow-x-hidden hide-scrollbar" data-astro-cid-haiuh7kc> <div id="toc" class="w-full h-full transition-swup-fade" data-astro-cid-haiuh7kc> <table-of-contents id="toc" data-astro-cid-7ckeuxew="true" class="group"> <!-- TOC内容将由JavaScript动态生成 --> </table-of-contents> <script type="module" src="/_astro/TOC.astro_astro_type_script_index_0_lang.AlUuAHtW.js"></script>  </div> </div> </div> </div> </div>  <!-- Music Player - 仅在启用时加载 -->  <!-- Pio 看板娘组件 - 仅在启用时加载 -->  <!-- increase the page height during page transition to prevent the scrolling animation from jumping --> <div id="page-height-extend" class="hidden h-[300vh]" data-astro-cid-sckkx6r4 style="--bannerOffset: 15vh;--banner-height-home: 65vh;--banner-height: 35vh;--configHue: 230;--page-width: 90rem;"></div>  <script type="module" src="/_astro/Layout.astro_astro_type_script_index_0_lang._R4ib5TO.js"></script> <!-- 代码块折叠功能 --> <script type="module" src="/_astro/Layout.astro_astro_type_script_index_1_lang.BMyF9r-v.js"></script> <!-- 主题切换综合性能优化器（包含代码块优化、重型元素优化、性能诊断） --> <script type="module" src="/_astro/Layout.astro_astro_type_script_index_2_lang.DbVEaLA1.js"></script></body></html> 

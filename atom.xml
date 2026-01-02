@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>翎</title>
+  <subtitle>喵喵喵</subtitle>
+  <link href="https://snow-kal.github.io/" rel="alternate" type="text/html"/>
+  <link href="https://snow-kal.github.io/atom.xml" rel="self" type="application/atom+xml"/>
+  <id>https://snow-kal.github.io/</id>
+  <updated>2026-01-02T05:36:43.768Z</updated>
+  <language>en</language>
+  <entry>
+    <title>Simple Guides for Mizuki</title>
+    <link href="https://snow-kal.github.io/posts/guide/" rel="alternate" type="text/html"/>
+    <id>https://snow-kal.github.io/posts/guide/</id>
+    <published>2024-04-01T00:00:00.000Z</published>
+    <updated>2024-04-01T00:00:00.000Z</updated>
+    <summary>How to use this blog template.</summary>
+    <content type="html"><![CDATA[<p>This blog template is built with <a href="https://astro.build/">Astro</a>. For the things that are not mentioned in this guide, you may find the answers in the <a href="https://docs.astro.build/">Astro Docs</a>.</p>
+<h2>Front-matter of Posts</h2>
+<pre><code>---
+title: My First Blog Post
+published: 2023-09-09
+description: This is the first post of my new Astro blog.
+image: ./cover.jpg
+tags: [Foo, Bar]
+category: Front-end
+draft: false
+---
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>title</code></td>
+<td>The title of the post.</td>
+</tr>
+<tr>
+<td><code>published</code></td>
+<td>The date the post was published.</td>
+</tr>
+<tr>
+<td><code>pinned</code></td>
+<td>Whether this post is pinned to the top of the post list.</td>
+</tr>
+<tr>
+<td><code>priority</code></td>
+<td>The priority of the pinned post. Smaller value means higher priority (0, 1, 2...).</td>
+</tr>
+<tr>
+<td><code>description</code></td>
+<td>A short description of the post. Displayed on index page.</td>
+</tr>
+<tr>
+<td><code>image</code></td>
+<td>The cover image path of the post.&lt;br/&gt;1. Start with <code>http://</code> or <code>https://</code>: Use web image&lt;br/&gt;2. Start with <code>/</code>: For image in <code>public</code> dir&lt;br/&gt;3. With none of the prefixes: Relative to the markdown file</td>
+</tr>
+<tr>
+<td><code>tags</code></td>
+<td>The tags of the post.</td>
+</tr>
+<tr>
+<td><code>category</code></td>
+<td>The category of the post.</td>
+</tr>
+<tr>
+<td><code>licenseName</code></td>
+<td>The license name for the post content.</td>
+</tr>
+<tr>
+<td><code>author</code></td>
+<td>The author of the post.</td>
+</tr>
+<tr>
+<td><code>sourceLink</code></td>
+<td>The source link or reference for the post content.</td>
+</tr>
+<tr>
+<td><code>draft</code></td>
+<td>If this post is still a draft, which won't be displayed.</td>
+</tr>
+</tbody>
+</table>
+<h2>Where to Place the Post Files</h2>
+<p>Your post files should be placed in <code>src/content/posts/</code> directory. You can also create sub-directories to better organize your posts and assets.</p>
+<pre><code>src/content/posts/
+├── post-1.md
+└── post-2/
+    ├── cover.png
+    └── index.md
+</code></pre>
+]]></content>
+    <author>
+      <name>翎</name>
+    </author>
+    <category term="Guides"></category>
+  </entry>
+</feed>

@@ -1,0 +1,1 @@
+import"./config.DOCV-rfy.js";import"./zh_TW.BW8a2Ucy.js";function c(o,e){const n=o.replace(/^\/|\/$/g,"").toLowerCase(),r=e.replace(/^\/|\/$/g,"").toLowerCase();return n===r}function t(...o){return o.join("/").replace(/\/+/g,"/")}function u(o){return t("","/",o)}export{c as p,u};
