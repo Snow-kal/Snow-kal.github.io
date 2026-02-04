@@ -80,16 +80,31 @@ const diaryData: DiaryItem[] = [
 		希望自己能加油吧`,
 		date: "2026-01-11T20:30:00Z",
 	},
+	{
+		id: 8,
+		content: `1.12-1.18
+		考试周完了，也顺利过了，终于可以放松一下了，感觉下学期可不能这么狼狈了。收拾收拾东西，准备回家了，在高铁上反思考了自己的大一上，稍微写了一点总结吧`,
+		date: "2026-01-18T20:30:00Z",
+	},
+	{
+		id: 9,
+		content: `1.19-1.25
+		寒假第一周，主要是放松放松，爽玩了一周，领了一下开源任务，玩玩游戏放松放松，顺手交了一下 pr ，跑了跑 CI ，估计这几周都在 dubbo-go 的泛化调用上面了，`,
+		date: "2026-01-25T20:30:00Z",
+	}
+	{
+		id: 10,
+		content: `1.26-2.1
+		这周主要是继续搞泛化调用的事情,目前来说这个模块完成了,接下来打去领别的任务，感觉1月没学多少东西，2月继续努力`,
+		date: "2026-02-01T20:30:00Z",
+	}
 ];
 
 // 获取日记统计数据
 export const getDiaryStats = () => {
 	const total = diaryData.length;
 	const hasImages = diaryData.filter(
-		(item) => item.images && item.images.length > 0,
-	).length;
-	const hasLocation = diaryData.filter((item) => item.location).length;
-	const hasMood = diaryData.filter((item) => item.mood).length;
+		(item) => item.image
 
 	return {
 		total,
