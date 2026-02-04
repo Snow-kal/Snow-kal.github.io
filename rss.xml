@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>翎</title><description>喵喵喵</description><link>https://snow-kal.github.io/</link><language>en</language><item><title>大一上 完</title><link>https://snow-kal.github.io/posts/%E6%80%BB%E7%BB%93/%E5%A4%A7%E4%B8%80%E4%B8%8A/</link><guid isPermaLink="true">https://snow-kal.github.io/posts/%E6%80%BB%E7%BB%93/%E5%A4%A7%E4%B8%80%E4%B8%8A/</guid><description>总结</description><pubDate>Fri, 16 Jan 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;没想到一学期一下子就过去了，开学前还在时间学长们的动态，没想到现在也成为了故事里的人。在高铁上，突然想起了彩彩学长的一篇博客，故抱着总结和打发一下时间的心理，写下这篇博客&lt;/p&gt;
+&lt;h2&gt;家园&lt;/h2&gt;
+&lt;h3&gt;彩彩&lt;/h3&gt;
+&lt;p&gt;8月的一天，因为一个偶然的机会，我认识了彩彩学长，进而了解到家园工作室，说实在的当看到考核要求的时候我对我能不能进入家园是心存疑虑的，但是曾看到彩彩的一句话让我坚持了下来——相信的心就是你的魔法，从这方面讲，彩彩学长对我来说充当了引路人的角色，以及或许彩彩真的是魅魔吧hh，每次看到彩彩都能燃起我的动力（虽然可能本人没有注意到这些，从心里讲我还是很感谢彩彩的）。所幸，该说是运气好呢，最终还是有惊无险的通过了。&lt;/p&gt;
+&lt;h3&gt;家园人&lt;/h3&gt;
+&lt;p&gt;进入家园之后，我遇到了一群有热情有能力的人，还有各位家园的大佬们，跟他们在一起总是感觉自惭形秽，以后也要努力提升自己的技术呀，还有最重要的是保持技术热情！&lt;/p&gt;
+&lt;h3&gt;hackweek&lt;/h3&gt;
+&lt;p&gt;hackweek 是考核也是一种活动，现在回想起来，感觉当时还是很有激情的。从总结的角度来看的话，比起代码的架构，沟通能力还是更重要一点&lt;/p&gt;
+&lt;h2&gt;超算&lt;/h2&gt;
+&lt;h3&gt;小莫&lt;/h3&gt;
+&lt;p&gt;依然8月的一天，偶然加入了 Discord 群，然后遇到了小莫以及了解到了超算。寻路之南这个项目我觉得对于 0 基础的人来说是很友好的，跟随着教程第一次体会到了如何去贡献（现在想来单当时第一次贡献的时候感觉傻傻的hhh）。之后依旧有惊无险的通过了考核加入了超算俱乐部。
+之后就是遇到了小莫，小莫的第一印象是转专业大佬和一个插件的制作者，之后稍微了解了一下小莫的经历，感慨来之不易，虽然转专业有转专业的累吧，但我还是希望小莫可以更自信一点，毕竟换位思考一下，如果我处于那种情景下的话，我是不可能做到跟小莫一样的。小莫加油呀！&lt;/p&gt;
+&lt;h2&gt;Dubbo-go&lt;/h2&gt;
+&lt;h3&gt;踏出开源的第一步&lt;/h3&gt;
+&lt;p&gt;Discord 乱逛的时候看到彩彩写的一篇帖子——如何踏出开源的第一步，这个帖子对我的帮助是很大的，hackweek 结束之后，我按照上面的指引，算得上是机缘巧合吧，最终被捞进去了。现在想来深感惭愧，学期后面主要是旁听会议和准备考试了，唉唉可惜没有实质性的贡献&lt;/p&gt;
+&lt;h2&gt;写道最后&lt;/h2&gt;
+&lt;p&gt;想说的话有很多，我只是挑了几个重点罢了
+我很羡慕能公开表达出自己的人啊，对我来说这些是我难以启口与表达的心里话，希望自己能够更自信一点点，能稍微赢过自己吧&lt;/p&gt;
+</content:encoded></item><item><title>Simple Guides for Mizuki</title><link>https://snow-kal.github.io/posts/guide/</link><guid isPermaLink="true">https://snow-kal.github.io/posts/guide/</guid><description>How to use this blog template.</description><pubDate>Mon, 01 Apr 2024 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;This blog template is built with &lt;a href=&quot;https://astro.build/&quot;&gt;Astro&lt;/a&gt;. For the things that are not mentioned in this guide, you may find the answers in the &lt;a href=&quot;https://docs.astro.build/&quot;&gt;Astro Docs&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;Front-matter of Posts&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;---
+title: My First Blog Post
+published: 2023-09-09
+description: This is the first post of my new Astro blog.
+image: ./cover.jpg
+tags: [Foo, Bar]
+category: Front-end
+draft: false
+---
+&lt;/code&gt;&lt;/pre&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Attribute&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;title&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;The title of the post.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;published&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;The date the post was published.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;pinned&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Whether this post is pinned to the top of the post list.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;priority&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;The priority of the pinned post. Smaller value means higher priority (0, 1, 2...).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;description&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;A short description of the post. Displayed on index page.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;image&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;The cover image path of the post.&amp;lt;br/&amp;gt;1. Start with &lt;code&gt;http://&lt;/code&gt; or &lt;code&gt;https://&lt;/code&gt;: Use web image&amp;lt;br/&amp;gt;2. Start with &lt;code&gt;/&lt;/code&gt;: For image in &lt;code&gt;public&lt;/code&gt; dir&amp;lt;br/&amp;gt;3. With none of the prefixes: Relative to the markdown file&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;tags&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;The tags of the post.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;category&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;The category of the post.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;licenseName&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;The license name for the post content.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;author&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;The author of the post.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;sourceLink&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;The source link or reference for the post content.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;draft&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;If this post is still a draft, which won&apos;t be displayed.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2&gt;Where to Place the Post Files&lt;/h2&gt;
+&lt;p&gt;Your post files should be placed in &lt;code&gt;src/content/posts/&lt;/code&gt; directory. You can also create sub-directories to better organize your posts and assets.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;src/content/posts/
+├── post-1.md
+└── post-2/
+    ├── cover.png
+    └── index.md
+&lt;/code&gt;&lt;/pre&gt;
+</content:encoded></item></channel></rss>

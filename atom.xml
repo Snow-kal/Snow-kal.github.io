@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>翎</title>
+  <subtitle>喵喵喵</subtitle>
+  <link href="https://snow-kal.github.io/" rel="alternate" type="text/html"/>
+  <link href="https://snow-kal.github.io/atom.xml" rel="self" type="application/atom+xml"/>
+  <id>https://snow-kal.github.io/</id>
+  <updated>2026-02-04T14:53:04.725Z</updated>
+  <language>en</language>
+  <entry>
+    <title>大一上 完</title>
+    <link href="https://snow-kal.github.io/posts/%E6%80%BB%E7%BB%93/%E5%A4%A7%E4%B8%80%E4%B8%8A/" rel="alternate" type="text/html"/>
+    <id>https://snow-kal.github.io/posts/%E6%80%BB%E7%BB%93/%E5%A4%A7%E4%B8%80%E4%B8%8A/</id>
+    <published>2026-01-16T00:00:00.000Z</published>
+    <updated>2026-01-16T00:00:00.000Z</updated>
+    <summary>总结</summary>
+    <content type="html"><![CDATA[<p>没想到一学期一下子就过去了，开学前还在时间学长们的动态，没想到现在也成为了故事里的人。在高铁上，突然想起了彩彩学长的一篇博客，故抱着总结和打发一下时间的心理，写下这篇博客</p>
+<h2>家园</h2>
+<h3>彩彩</h3>
+<p>8月的一天，因为一个偶然的机会，我认识了彩彩学长，进而了解到家园工作室，说实在的当看到考核要求的时候我对我能不能进入家园是心存疑虑的，但是曾看到彩彩的一句话让我坚持了下来——相信的心就是你的魔法，从这方面讲，彩彩学长对我来说充当了引路人的角色，以及或许彩彩真的是魅魔吧hh，每次看到彩彩都能燃起我的动力（虽然可能本人没有注意到这些，从心里讲我还是很感谢彩彩的）。所幸，该说是运气好呢，最终还是有惊无险的通过了。</p>
+<h3>家园人</h3>
+<p>进入家园之后，我遇到了一群有热情有能力的人，还有各位家园的大佬们，跟他们在一起总是感觉自惭形秽，以后也要努力提升自己的技术呀，还有最重要的是保持技术热情！</p>
+<h3>hackweek</h3>
+<p>hackweek 是考核也是一种活动，现在回想起来，感觉当时还是很有激情的。从总结的角度来看的话，比起代码的架构，沟通能力还是更重要一点</p>
+<h2>超算</h2>
+<h3>小莫</h3>
+<p>依然8月的一天，偶然加入了 Discord 群，然后遇到了小莫以及了解到了超算。寻路之南这个项目我觉得对于 0 基础的人来说是很友好的，跟随着教程第一次体会到了如何去贡献（现在想来单当时第一次贡献的时候感觉傻傻的hhh）。之后依旧有惊无险的通过了考核加入了超算俱乐部。
+之后就是遇到了小莫，小莫的第一印象是转专业大佬和一个插件的制作者，之后稍微了解了一下小莫的经历，感慨来之不易，虽然转专业有转专业的累吧，但我还是希望小莫可以更自信一点，毕竟换位思考一下，如果我处于那种情景下的话，我是不可能做到跟小莫一样的。小莫加油呀！</p>
+<h2>Dubbo-go</h2>
+<h3>踏出开源的第一步</h3>
+<p>Discord 乱逛的时候看到彩彩写的一篇帖子——如何踏出开源的第一步，这个帖子对我的帮助是很大的，hackweek 结束之后，我按照上面的指引，算得上是机缘巧合吧，最终被捞进去了。现在想来深感惭愧，学期后面主要是旁听会议和准备考试了，唉唉可惜没有实质性的贡献</p>
+<h2>写道最后</h2>
+<p>想说的话有很多，我只是挑了几个重点罢了
+我很羡慕能公开表达出自己的人啊，对我来说这些是我难以启口与表达的心里话，希望自己能够更自信一点点，能稍微赢过自己吧</p>
+]]></content>
+    <author>
+      <name>翎</name>
+    </author>
+    <category term="总结"></category>
+  </entry>
+  <entry>
+    <title>Simple Guides for Mizuki</title>
+    <link href="https://snow-kal.github.io/posts/guide/" rel="alternate" type="text/html"/>
+    <id>https://snow-kal.github.io/posts/guide/</id>
+    <published>2024-04-01T00:00:00.000Z</published>
+    <updated>2024-04-01T00:00:00.000Z</updated>
+    <summary>How to use this blog template.</summary>
+    <content type="html"><![CDATA[<p>This blog template is built with <a href="https://astro.build/">Astro</a>. For the things that are not mentioned in this guide, you may find the answers in the <a href="https://docs.astro.build/">Astro Docs</a>.</p>
+<h2>Front-matter of Posts</h2>
+<pre><code>---
+title: My First Blog Post
+published: 2023-09-09
+description: This is the first post of my new Astro blog.
+image: ./cover.jpg
+tags: [Foo, Bar]
+category: Front-end
+draft: false
+---
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>title</code></td>
+<td>The title of the post.</td>
+</tr>
+<tr>
+<td><code>published</code></td>
+<td>The date the post was published.</td>
+</tr>
+<tr>
+<td><code>pinned</code></td>
+<td>Whether this post is pinned to the top of the post list.</td>
+</tr>
+<tr>
+<td><code>priority</code></td>
+<td>The priority of the pinned post. Smaller value means higher priority (0, 1, 2...).</td>
+</tr>
+<tr>
+<td><code>description</code></td>
+<td>A short description of the post. Displayed on index page.</td>
+</tr>
+<tr>
+<td><code>image</code></td>
+<td>The cover image path of the post.&lt;br/&gt;1. Start with <code>http://</code> or <code>https://</code>: Use web image&lt;br/&gt;2. Start with <code>/</code>: For image in <code>public</code> dir&lt;br/&gt;3. With none of the prefixes: Relative to the markdown file</td>
+</tr>
+<tr>
+<td><code>tags</code></td>
+<td>The tags of the post.</td>
+</tr>
+<tr>
+<td><code>category</code></td>
+<td>The category of the post.</td>
+</tr>
+<tr>
+<td><code>licenseName</code></td>
+<td>The license name for the post content.</td>
+</tr>
+<tr>
+<td><code>author</code></td>
+<td>The author of the post.</td>
+</tr>
+<tr>
+<td><code>sourceLink</code></td>
+<td>The source link or reference for the post content.</td>
+</tr>
+<tr>
+<td><code>draft</code></td>
+<td>If this post is still a draft, which won't be displayed.</td>
+</tr>
+</tbody>
+</table>
+<h2>Where to Place the Post Files</h2>
+<p>Your post files should be placed in <code>src/content/posts/</code> directory. You can also create sub-directories to better organize your posts and assets.</p>
+<pre><code>src/content/posts/
+├── post-1.md
+└── post-2/
+    ├── cover.png
+    └── index.md
+</code></pre>
+]]></content>
+    <author>
+      <name>翎</name>
+    </author>
+    <category term="Guides"></category>
+  </entry>
+</feed>

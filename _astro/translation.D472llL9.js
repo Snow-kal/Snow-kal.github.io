@@ -1,0 +1,1 @@
+import{a as e}from"./config.DOCV-rfy.js";import{j as t,z as s,a as r,e as n}from"./zh_TW.BW8a2Ucy.js";const i=n,_={en:n,en_us:n,en_gb:n,en_au:n,zh_cn:r,zh_tw:s,ja:t,ja_jp:t};function u(a){return _[a.toLowerCase()]||i}function g(a){const o=e.lang||"en";return u(o)[a]}export{g as i};
